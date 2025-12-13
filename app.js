@@ -634,23 +634,38 @@ const smartphones = [
     }
 ];
 
-// --- TOGGLE CATEGORIES (MOBILE ONLY) ---
-function toggleCategories() {
-    const content = document.getElementById('quick-categories-content');
-    const icon = document.getElementById('cat-toggle-icon');
+// --- TOGGLE MOBILE NAV (NEW) ---
+function toggleMobileNav() {
+    const menu = document.getElementById('mobile-nav-menu');
+    const icon = document.getElementById('mobile-nav-icon');
     
-    // Toggle hidden class
-    content.classList.toggle('hidden');
+    menu.classList.toggle('hidden');
     
-    // Toggle icon (menu <-> x)
-    if (content.classList.contains('hidden')) {
+    if (menu.classList.contains('hidden')) {
         icon.setAttribute('data-lucide', 'menu');
     } else {
         icon.setAttribute('data-lucide', 'x');
     }
-    
-    // Re-render icons untuk ikon yang baru diubah
     lucide.createIcons();
+}
+
+// ... (Sisa fungsi lainnya: filterByPrice, quickFilter, dll) ...
+// --- SAVED LOGIC UPDATE ---
+function updateSavedBadge() {
+    const badge = document.getElementById('saved-badge');
+    const mobileBadge = document.getElementById('mobile-saved-badge'); // New Badge for mobile
+    
+    if (badge) {
+        badge.innerText = savedList.length;
+        if (savedList.length > 0) badge.classList.remove('hidden');
+        else badge.classList.add('hidden');
+    }
+
+    if (mobileBadge) {
+        mobileBadge.innerText = savedList.length;
+        if (savedList.length > 0) mobileBadge.classList.remove('hidden');
+        else mobileBadge.classList.add('hidden');
+    }
 }
 
 // --- STATE ---
@@ -1288,4 +1303,5 @@ function resetQuiz() {
     startQuiz();
 
 }
+
 
