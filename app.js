@@ -634,6 +634,25 @@ const smartphones = [
     }
 ];
 
+// --- TOGGLE CATEGORIES (MOBILE ONLY) ---
+function toggleCategories() {
+    const content = document.getElementById('quick-categories-content');
+    const icon = document.getElementById('cat-toggle-icon');
+    
+    // Toggle hidden class
+    content.classList.toggle('hidden');
+    
+    // Toggle icon (menu <-> x)
+    if (content.classList.contains('hidden')) {
+        icon.setAttribute('data-lucide', 'menu');
+    } else {
+        icon.setAttribute('data-lucide', 'x');
+    }
+    
+    // Re-render icons untuk ikon yang baru diubah
+    lucide.createIcons();
+}
+
 // --- STATE ---
 let filteredPhones = [...smartphones];
 let compareList = [];
@@ -1269,3 +1288,4 @@ function resetQuiz() {
     startQuiz();
 
 }
+
