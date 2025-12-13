@@ -1,115 +1,59 @@
 // --- DATA ---
-// Data Smartphone 2025: 7 Model per Kategori Harga + Tambahan iQoo + Tambahan Samsung & Apple
+// Data Smartphone 2025 Lengkap
 const smartphones = [
     // --- KATEGORI 1: DI BAWAH 2 JUTA (BUDGET) ---
     {
-        id: 101,
-        name: "Itel P65 5G",
-        price: 1699000,
-        brand: "Lainnya",
-        screen: "6.7' IPS LCD 120Hz",
-        chipset: "Unisoc T615 ",
-        ram: "6GB",
-        storage: "128GB",
-        camera: "50MP AI",
-        battery: "5000 mAh (18W)",
-        category: ["basic", "gaming"],
+        id: 101, name: "Itel P65 5G", price: 1699000, brand: "Lainnya",
+        screen: "6.7' IPS LCD 120Hz", chipset: "Unisoc T615", ram: "6GB", storage: "128GB",
+        camera: "50MP AI", battery: "5000 mAh (18W)", category: ["basic", "gaming"],
         scores: { camera: 6.5, gaming: 7.5, battery: 9.5, multi: 7.0 },
         prevGen: "Upgrade baterai lebih besar dari P55, layar lebih luas dengan refresh rate tinggi.",
         image: "itel-p65.jpg"
     },
     {
-        id: 102,
-        name: "Xiaomi Redmi 14C",
-        price: 1899000,
-        brand: "Xiaomi",
-        screen: "6.74' IPS LCD 90Hz",
-        chipset: "Helio G81 Ultra",
-        ram: "8GB",
-        storage: "256GB",
-        camera: "50MP Main",
-        battery: "5160 mAh (18W)",
-        category: ["basic", "work"],
+        id: 102, name: "Xiaomi Redmi 14C", price: 1899000, brand: "Xiaomi",
+        screen: "6.74' IPS LCD 90Hz", chipset: "Helio G81 Ultra", ram: "8GB", storage: "256GB",
+        camera: "50MP Main", battery: "5160 mAh (18W)", category: ["basic", "work"],
         scores: { camera: 7.0, gaming: 6.5, battery: 8.5, multi: 7.5 },
         prevGen: "Desain lebih tipis dari 13C, charging lebih cepat 33W.",
         image: "xiaomi-redmi-14c.jpg"
     },
     {
-        id: 103,
-        name: "Samsung Galaxy A06",
-        price: 1999000,
-        brand: "Samsung",
-        screen: "6.7' PLS LCD 90Hz",
-        chipset: "Mediatek Helio G85",
-        ram: "6GB",
-        storage: "128GB",
-        camera: "50MP + 2MP",
-        battery: "5000 mAh (25W)",
-        category: ["basic", "work"],
+        id: 103, name: "Samsung Galaxy A06", price: 1999000, brand: "Samsung",
+        screen: "6.7' PLS LCD 90Hz", chipset: "Mediatek Helio G85", ram: "6GB", storage: "128GB",
+        camera: "50MP + 2MP", battery: "5000 mAh (25W)", category: ["basic", "work"],
         scores: { camera: 7.2, gaming: 6.0, battery: 8.5, multi: 7.0 },
         prevGen: "Peningkatan dari A05s: Layar lebih mulus 90Hz dan manajemen daya lebih baik.",
         image: "samsung-galaxy-a06.jpg"
     },
     {
-        id: 104,
-        name: "Infinix Hot 50 Pro",
-        price: 1950000,
-        brand: "Infinix",
-        screen: "6.78' FHD+ 120Hz",
-        chipset: "Helio G100",
-        ram: "8GB",
-        storage: "256GB",
-        camera: "50MP",
-        battery: "5000 mAh (33W)",
-        category: ["gaming", "camera"],
+        id: 104, name: "Infinix Hot 50 Pro", price: 1950000, brand: "Infinix",
+        screen: "6.78' FHD+ 120Hz", chipset: "Helio G100", ram: "8GB", storage: "256GB",
+        camera: "50MP", battery: "5000 mAh (33W)", category: ["gaming", "camera"],
         scores: { camera: 7.5, gaming: 7.8, battery: 8.0, multi: 7.5 },
         prevGen: "Kamera lompat ke 50MP di kelas harga murah, chipset gaming entry level baru.",
         image: "infinix-hot-50pro4g.jpg"
     },
     {
-        id: 105,
-        name: "Tecno Spark 30",
-        price: 1750000,
-        brand: "Lainnya",
-        screen: "6.6' IPS 90Hz",
-        chipset: "Helio G91",
-        ram: "8GB",
-        storage: "128GB",
-        camera: "64MP",
-        battery: "5000 mAh (18W)",
-        category: ["basic"],
+        id: 105, name: "Tecno Spark 30", price: 1750000, brand: "Lainnya",
+        screen: "6.6' IPS 90Hz", chipset: "Helio G91", ram: "8GB", storage: "128GB",
+        camera: "64MP", battery: "5000 mAh (18W)", category: ["basic"],
         scores: { camera: 6.8, gaming: 7.0, battery: 8.5, multi: 7.0 },
         prevGen: "Desain fresh, RAM bawaan besar 8GB standar.",
         image: "tecno-spark-30.jpg"
     },
     {
-        id: 106,
-        name: "Vivo Y04",
-        price: 1899000,
-        brand: "Vivo",
-        screen: "6.56' IPS LCD",
-        chipset: "Unisoc T7225",
-        ram: "6GB",
-        storage: "128GB",
-        camera: "13MP",
-        battery: "5000 mAh (15W)",
-        category: ["basic", "camera"],
+        id: 106, name: "Vivo Y04", price: 1899000, brand: "Vivo",
+        screen: "6.56' IPS LCD", chipset: "Unisoc T7225", ram: "6GB", storage: "128GB",
+        camera: "13MP", battery: "5000 mAh (15W)", category: ["basic", "camera"],
         scores: { camera: 7.3, gaming: 6.0, battery: 8.5, multi: 6.5 },
         prevGen: "Fokus pada desain stylish dan hasil foto potret khas Vivo di harga terjangkau.",
         image: "vivo-y04.jpg"
     },
     {
-        id: 107,
-        name: "Realme C67 (2025)",
-        price: 1999000,
-        brand: "Lainnya",
-        screen: "6.72' FHD+ 90Hz",
-        chipset: "Snapdragon 685",
-        ram: "8GB",
-        storage: "128GB",
-        camera: "108MP Zoom",
-        battery: "5000 mAh (33W)",
-        category: ["camera", "work"],
+        id: 107, name: "Realme C67 (2025)", price: 1999000, brand: "Lainnya",
+        screen: "6.72' FHD+ 90Hz", chipset: "Snapdragon 685", ram: "8GB", storage: "128GB",
+        camera: "108MP Zoom", battery: "5000 mAh (33W)", category: ["camera", "work"],
         scores: { camera: 7.8, gaming: 6.8, battery: 8.5, multi: 7.5 },
         prevGen: "Versi refresh dengan optimasi software kamera 108MP yang lebih stabil.",
         image: "realme-c67.jpg"
@@ -117,129 +61,65 @@ const smartphones = [
 
     // --- KATEGORI 2: 2 - 4 JUTA (MID RANGE) ---
     {
-        id: 201,
-        name: "Samsung Galaxy A16 5G",
-        price: 3499000,
-        brand: "Samsung",
-        screen: "6.7' Super AMOLED 90Hz",
-        chipset: "Dimensity 6300+",
-        ram: "8GB",
-        storage: "256GB",
-        camera: "50MP (EIS) + UW",
-        battery: "5000 mAh (25W)",
-        category: ["work", "basic"],
+        id: 201, name: "Samsung Galaxy A16 5G", price: 3499000, brand: "Samsung",
+        screen: "6.7' Super AMOLED 90Hz", chipset: "Dimensity 6300+", ram: "8GB", storage: "256GB",
+        camera: "50MP (EIS) + UW", battery: "5000 mAh (25W)", category: ["work", "basic"],
         scores: { camera: 8.0, gaming: 7.0, battery: 9.0, multi: 8.0 },
         prevGen: "Jaminan update OS 6 tahun pertama di seri A1x, layar AMOLED lebih terang.",
         image: "samsung-galaxy-a165g.jpg"
     },
     {
-        id: 202,
-        name: "Redmi Note 14 5G",
-        price: 2899000,
-        brand: "Xiaomi",
-        screen: "6.67' AMOLED 120Hz",
-        chipset: "Dimensity 7025 Ultra",
-        ram: "8GB",
-        storage: "256GB",
-        camera: "108MP (OIS)",
-        battery: "5110 mAh (45W)",
-        category: ["gaming", "creator"],
+        id: 202, name: "Redmi Note 14 5G", price: 2899000, brand: "Xiaomi",
+        screen: "6.67' AMOLED 120Hz", chipset: "Dimensity 7025 Ultra", ram: "8GB", storage: "256GB",
+        camera: "108MP (OIS)", battery: "5110 mAh (45W)", category: ["gaming", "creator"],
         scores: { camera: 7.8, gaming: 8.0, battery: 8.5, multi: 8.0 },
         prevGen: "Bezel layar super tipis, desain lebih premium mirip seri Pro.",
         image: "xiaomi-redmi-note-145g.jpg"
     },
     {
-        id: 203,
-        name: "Infinix Note 50 Pro+",
-        price: 3299000,
-        brand: "Infinix",
-        screen: "6.78' 3D Curved 144Hz",
-        chipset: "Dimensity 7200",
-        ram: "12GB",
-        storage: "256GB",
-        camera: "108MP (OIS)",
-        battery: "5200 mAh (100W)",
-        category: ["gaming", "work"],
+        id: 203, name: "Infinix Note 50 Pro+", price: 3299000, brand: "Infinix",
+        screen: "6.78' 3D Curved 144Hz", chipset: "Dimensity 7200", ram: "12GB", storage: "256GB",
+        camera: "108MP (OIS)", battery: "5200 mAh (100W)", category: ["gaming", "work"],
         scores: { camera: 7.5, gaming: 8.5, battery: 8.8, multi: 8.5 },
         prevGen: "Charging lebih ngebut 100W, chipset 4nm hemat daya.",
         image: "infinix-note50-pro-plus-5g.jpg"
     },
     {
-        id: 204,
-        name: "Poco M7 Pro 5G",
-        price: 3199000,
-        brand: "Xiaomi",
-        screen: "6.67' Flow AMOLED",
-        chipset: "Mediatek Dimensity 7025 Ultra",
-        ram: "8GB",
-        storage: "256GB",
-        camera: "50MP (OIS)",
-        battery: "5110 mAh (45W)",
-        category: ["gaming", "camera"],
+        id: 204, name: "Poco M7 Pro 5G", price: 3199000, brand: "Xiaomi",
+        screen: "6.67' Flow AMOLED", chipset: "Mediatek Dimensity 7025 Ultra", ram: "8GB", storage: "256GB",
+        camera: "50MP (OIS)", battery: "5110 mAh (45W)", category: ["gaming", "camera"],
         scores: { camera: 7.8, gaming: 8.2, battery: 9.0, multi: 8.0 },
         prevGen: "Stabilisasi OIS kini hadir di seri M, layar Flow AMOLED bezel tipis.",
         image: "xiaomi-poco-m7-pro-5g.jpg"
     },
     {
-        id: 205,
-        name: "Vivo Y100 5G (2025)",
-        price: 3699000,
-        brand: "Vivo",
-        screen: "6.67' AMOLED 120Hz",
-        chipset: "Snapdragon 4 Gen 2",
-        ram: "8GB",
-        storage: "256GB",
-        camera: "50MP + 8MP UW",
-        battery: "5000 mAh (80W)",
-        category: ["camera", "work"],
+        id: 205, name: "Vivo Y100 5G (2025)", price: 3699000, brand: "Vivo",
+        screen: "6.67' AMOLED 120Hz", chipset: "Snapdragon 4 Gen 2", ram: "8GB", storage: "256GB",
+        camera: "50MP + 8MP UW", battery: "5000 mAh (80W)", category: ["camera", "work"],
         scores: { camera: 8.0, gaming: 7.0, battery: 9.2, multi: 8.0 },
         prevGen: "Charging kilat 80W tercepat di kelasnya, bodi kulit fiber premium.",
         image: "vivo-y100-5g.jpg"
     },
     {
-        id: 206,
-        name: "Tecno Camon 30 Premier",
-        price: 3999000,
-        brand: "Lainnya",
-        screen: "6.77' LTPO AMOLED",
-        chipset: "Dimensity 8200",
-        ram: "12GB",
-        storage: "512GB",
-        camera: "Sony IMX890 50MP",
-        battery: "5000 mAh (70W)",
-        category: ["camera", "creator"],
+        id: 206, name: "Tecno Camon 30 Premier", price: 3999000, brand: "Lainnya",
+        screen: "6.77' LTPO AMOLED", chipset: "Dimensity 8200", ram: "12GB", storage: "512GB",
+        camera: "Sony IMX890 50MP", battery: "5000 mAh (70W)", category: ["camera", "creator"],
         scores: { camera: 8.5, gaming: 8.0, battery: 8.5, multi: 8.5 },
         prevGen: "Sensor kamera flagship Sony IMX890 di harga menengah.",
         image: "tecno-camon-30-premier-5g.jpg"
     },
     {
-        id: 207,
-        name: "Realme 13+ 5G",
-        price: 3899000,
-        brand: "Lainnya",
-        screen: "6.67' AMOLED 120Hz",
-        chipset: "Dimensity 7300",
-        ram: "12GB",
-        storage: "256GB",
-        camera: "50MP Sony LYT-600",
-        battery: "5000 mAh (80W)",
-        category: ["camera", "gaming"],
+        id: 207, name: "Realme 13+ 5G", price: 3899000, brand: "Lainnya",
+        screen: "6.67' AMOLED 120Hz", chipset: "Dimensity 7300", ram: "12GB", storage: "256GB",
+        camera: "50MP Sony LYT-600", battery: "5000 mAh (80W)", category: ["camera", "gaming"],
         scores: { camera: 8.2, gaming: 7.8, battery: 8.5, multi: 8.2 },
         prevGen: "Sensor Sony baru untuk foto low-light lebih jernih.",
         image: "realme-13-plus-5g.jpg"
     },
     {
-        id: 208,
-        name: "iQoo Z10r 5G",
-        price: 4399000,
-        brand: "Lainnya",
-        screen: "6.77' AMOLED 120Hz",
-        chipset: "Mediatek Dimensity 7400",
-        ram: "12GB",
-        storage: "256GB",
-        camera: "50MP OIS",
-        battery: "5700 mAh (44W)",
-        category: ["gaming", "work"],
+        id: 208, name: "iQoo Z10r 5G", price: 4399000, brand: "Lainnya",
+        screen: "6.77' AMOLED 120Hz", chipset: "Mediatek Dimensity 7400", ram: "12GB", storage: "256GB",
+        camera: "50MP OIS", battery: "5700 mAh (44W)", category: ["gaming", "work"],
         scores: { camera: 7.8, gaming: 9.3, battery: 9.5, multi: 8.8 },
         prevGen: "Baterai monster 6000mAh dengan bodi tipis, layar 144Hz paling smooth di kelasnya.",
         image: "iqoo-z10r.jpg"
@@ -247,426 +127,200 @@ const smartphones = [
 
     // --- KATEGORI 3: 4 - 6 JUTA (UPPER MID) ---
     {
-        id: 301,
-        name: "Samsung Galaxy A36 5G",
-        price: 4799000,
-        brand: "Samsung",
-        screen: "6.7' Super AMOLED 120Hz",
-        chipset: "Snapdragon 6 Gen 3",
-        ram: "8GB",
-        storage: "256GB",
-        camera: "50MP (OIS) + 8MP UW",
-        battery: "5000 mAh (45W)",
-        category: ["work", "creator", "camera"],
+        id: 301, name: "Samsung Galaxy A36 5G", price: 4799000, brand: "Samsung",
+        screen: "6.7' Super AMOLED 120Hz", chipset: "Snapdragon 6 Gen 3", ram: "8GB", storage: "256GB",
+        camera: "50MP (OIS) + 8MP UW", battery: "5000 mAh (45W)", category: ["work", "creator", "camera"],
         scores: { camera: 8.5, gaming: 7.5, battery: 9.0, multi: 8.5 },
         prevGen: "Desain Key Island baru, bezel lebih tipis dari A35.",
         image: "samsung-galaxy-a36.jpg"
     },
     {
-        id: 302,
-        name: "Xiaomi Redmi Note 14 Pro+ 5G",
-        price: 5499000,
-        brand: "Xiaomi",
-        screen: "6.67' 1.5K Curved AMOLED",
-        chipset: "Snapdragon 7s Gen 3",
-        ram: "12GB",
-        storage: "512GB",
-        camera: "200MP + Telephoto",
-        battery: "5110 mAh (120W)",
-        category: ["camera", "gaming"],
+        id: 302, name: "Xiaomi Redmi Note 14 Pro+ 5G", price: 5499000, brand: "Xiaomi",
+        screen: "6.67' 1.5K Curved AMOLED", chipset: "Snapdragon 7s Gen 3", ram: "12GB", storage: "512GB",
+        camera: "200MP + Telephoto", battery: "5110 mAh (120W)", category: ["camera", "gaming"],
         scores: { camera: 9.0, gaming: 8.5, battery: 9.2, multi: 9.0 },
         prevGen: "IP68 Tahan air penuh, layar lengkung premium, ada lensa telephoto.",
         image: "xiaomi-redmi-note-14-pro-plus-5g.jpg"
     },
     {
-        id: 303,
-        name: "Poco F7",
-        price: 5899000,
-        brand: "Xiaomi",
-        screen: "6.83' 1.5K OLED 120Hz",
-        chipset: "Snapdragon 8s Gen 4",
-        ram: "12GB",
-        storage: "256GB",
-        camera: "50MP OIS",
-        battery: "6500 mAh (90W)",
-        category: ["gaming", "work"],
+        id: 303, name: "Poco F7", price: 5899000, brand: "Xiaomi",
+        screen: "6.83' 1.5K OLED 120Hz", chipset: "Snapdragon 8s Gen 4", ram: "12GB", storage: "256GB",
+        camera: "50MP OIS", battery: "6500 mAh (90W)", category: ["gaming", "work"],
         scores: { camera: 7.8, gaming: 9.8, battery: 9.0, multi: 9.5 },
         prevGen: "Performa flagship killer sejati, baterai badak 5500 mAh.",
         image: "xiaomi-poco-f7.jpg"
     },
     {
-        id: 304,
-        name: "Infinix GT 30 Pro",
-        price: 4999000,
-        brand: "Infinix",
-        screen: "6.78' AMOLED 144Hz",
-        chipset: "Dimensity 8350 Ultimate",
-        ram: "12GB",
-        storage: "256GB",
-        camera: "108MP (OIS)",
-        battery: "5200 mAh (45W)",
-        category: ["gaming"],
+        id: 304, name: "Infinix GT 30 Pro", price: 4999000, brand: "Infinix",
+        screen: "6.78' AMOLED 144Hz", chipset: "Dimensity 8350 Ultimate", ram: "12GB", storage: "256GB",
+        camera: "108MP (OIS)", battery: "5200 mAh (45W)", category: ["gaming"],
         scores: { camera: 7.5, gaming: 9.5, battery: 8.5, multi: 8.8 },
         prevGen: "Chipset jauh lebih kencang (setara flagship tahun lalu), lampu LED mecha lebih interaktif.",
         image: "infinix-gt30-pro.jpg"
     },
     {
-        id: 305,
-        name: "Vivo V40e",
-        price: 5299000,
-        brand: "Vivo",
-        screen: "6.77' Curved AMOLED",
-        chipset: "Mediatek Dimensity 7300",
-        ram: "8GB",
-        storage: "256GB",
-        camera: "50MP Zeiss Optics",
-        battery: "5500 mAh (80W)",
-        category: ["camera", "creator"],
+        id: 305, name: "Vivo V40e", price: 5299000, brand: "Vivo",
+        screen: "6.77' Curved AMOLED", chipset: "Mediatek Dimensity 7300", ram: "8GB", storage: "256GB",
+        camera: "50MP Zeiss Optics", battery: "5500 mAh (80W)", category: ["camera", "creator"],
         scores: { camera: 9.2, gaming: 7.5, battery: 9.5, multi: 8.5 },
         prevGen: "Kolaborasi ZEISS masuk ke seri V lebih murah, hasil foto potret level profesional.",
         image: "vivo-v40e.jpg"
     },
     {
-        id: 306,
-        name: "Oppo Reno 12 F 5G",
-        price: 4599000,
-        brand: "Oppo",
-        screen: "6.67' AMOLED 120Hz",
-        chipset: "Dimensity 6300",
-        ram: "12GB",
-        storage: "256GB",
-        camera: "50MP + AI Eraser",
-        battery: "5000 mAh (45W)",
-        category: ["camera", "basic"],
+        id: 306, name: "Oppo Reno 12 F 5G", price: 4599000, brand: "Oppo",
+        screen: "6.67' AMOLED 120Hz", chipset: "Dimensity 6300", ram: "12GB", storage: "256GB",
+        camera: "50MP + AI Eraser", battery: "5000 mAh (45W)", category: ["camera", "basic"],
         scores: { camera: 8.5, gaming: 7.0, battery: 8.5, multi: 8.0 },
         prevGen: "Fitur AI Generative (hapus objek foto) hadir di harga terjangkau.",
         image: "oppo-reno12-f.jpg"
     },
     {
-        id: 307,
-        name: "Realme 13 Pro",
-        price: 5999000,
-        brand: "Lainnya",
-        screen: "6.7' Curved AMOLED",
-        chipset: "Snapdragon 7s Gen 2",
-        ram: "12GB",
-        storage: "512GB",
-        camera: "50MP Sony LYT-701",
-        battery: "5200 mAh (45W)",
-        category: ["camera", "creator"],
+        id: 307, name: "Realme 13 Pro", price: 5999000, brand: "Lainnya",
+        screen: "6.7' Curved AMOLED", chipset: "Snapdragon 7s Gen 2", ram: "12GB", storage: "512GB",
+        camera: "50MP Sony LYT-701", battery: "5200 mAh (45W)", category: ["camera", "creator"],
         scores: { camera: 8.8, gaming: 7.5, battery: 9.0, multi: 8.5 },
         prevGen: "Desain Monet Gold mewah, sensor kamera Sony LYT baru.",
         image: "realme-13-pro.jpg"
     },
     {
-        id: 308,
-        name: "Samsung Galaxy M55s 5G",
-        price: 4299000,
-        brand: "Samsung",
-        screen: "6.7' Super AMOLED+ 120Hz",
-        chipset: "Snapdragon 7 Gen 1",
-        ram: "8GB",
-        storage: "256GB",
-        camera: "50MP OIS + 8MP UW",
-        battery: "5000 mAh (45W)",
-        category: ["work", "basic"],
+        id: 308, name: "Samsung Galaxy M55s 5G", price: 4299000, brand: "Samsung",
+        screen: "6.7' Super AMOLED+ 120Hz", chipset: "Snapdragon 7 Gen 1", ram: "8GB", storage: "256GB",
+        camera: "50MP OIS + 8MP UW", battery: "5000 mAh (45W)", category: ["work", "basic"],
         scores: { camera: 8.2, gaming: 7.8, battery: 9.5, multi: 8.2 },
         prevGen: "Bodi super tipis dengan baterai besar, chipset Snapdragon yang efisien.",
         image: "samsung-galaxy-m55s.jpg"
     },
     {
-        id: 310,
-        name: "Samsung Galaxy M56 5G",
-        price: 4999000,
-        brand: "Samsung",
-        screen: "6.7' Super AMOLED+ 120Hz",
-        chipset: "Exynos 1480",
-        ram: "8GB",
-        storage: "256GB",
-        camera: "108MP OIS",
-        battery: "5000 mAh (45W)",
-        category: ["gaming", "work"],
-        scores: { camera: 8.0, gaming: 8.8, battery: 7.8, multi: 8.5 },
-        prevGen: "Layar dan Body Gorilla Glass Victus+, baterai tetap besar 5000mAh.",
+        id: 310, name: "Samsung Galaxy M56 5G", price: 4999000, brand: "Samsung",
+        screen: "6.7' Super AMOLED+ 144Hz", chipset: "Snapdragon 7+ Gen 3", ram: "8GB", storage: "256GB",
+        camera: "108MP OIS", battery: "6000 mAh (45W)", category: ["gaming", "work"],
+        scores: { camera: 8.0, gaming: 8.8, battery: 9.8, multi: 8.5 },
+        prevGen: "Refresh rate 144Hz pertama di seri M, baterai tetap monster 6000mAh.",
         image: "samsung-galaxy-m56.jpg"
     },
 
     // --- KATEGORI 4: DI ATAS 6 JUTA (FLAGSHIP) ---
     {
-        id: 401,
-        name: "iPhone 16",
-        price: 16499000,
-        brand: "Apple",
-        screen: "6.1' Super Retina XDR OLED",
-        chipset: "A18 Bionic",
-        ram: "8GB",
-        storage: "128GB",
-        camera: "48MP Fusion + 12MP UW",
-        battery: "3561 mAh (25W)",
-        category: ["work", "creator", "camera"],
+        id: 401, name: "iPhone 16", price: 16499000, brand: "Apple",
+        screen: "6.1' Super Retina XDR OLED", chipset: "A18 Bionic", ram: "8GB", storage: "128GB",
+        camera: "48MP Fusion + 12MP UW", battery: "3561 mAh (25W)", category: ["work", "creator", "camera"],
         scores: { camera: 9.5, gaming: 9.5, battery: 8.5, multi: 9.8 },
         prevGen: "Tombol 'Action Button' & 'Capture Button' baru, chip A18 super kencang untuk AI.",
         image: "apple-iphone-16.jpg"
     },
     {
-        id: 402,
-        name: "Samsung Galaxy S25",
-        price: 13999000,
-        brand: "Samsung",
-        screen: "6.2' Dynamic AMOLED 2X",
-        chipset: "Snapdragon 8 Elite / Exynos 2500",
-        ram: "12GB",
-        storage: "256GB",
-        camera: "50MP + 12MP + 10MP Tele",
-        battery: "4000 mAh (25W)",
-        category: ["work", "camera", "basic"],
+        id: 402, name: "Samsung Galaxy S25", price: 13999000, brand: "Samsung",
+        screen: "6.2' Dynamic AMOLED 2X", chipset: "Snapdragon 8 Elite / Exynos 2500", ram: "12GB", storage: "256GB",
+        camera: "50MP + 12MP + 10MP Tele", battery: "4000 mAh (25W)", category: ["work", "camera", "basic"],
         scores: { camera: 9.2, gaming: 9.2, battery: 8.0, multi: 9.5 },
         prevGen: "Bezel layar makin tipis, integrasi Galaxy AI generasi kedua lebih pintar.",
         image: "samsung-galaxy-s25.jpg"
     },
     {
-        id: 403,
-        name: "Samsung Galaxy A56 5G",
-        price: 6499000,
-        brand: "Samsung",
-        screen: "6.6' Super AMOLED 120Hz",
-        chipset: "Exynos 1580",
-        ram: "12GB",
-        storage: "256GB",
-        camera: "50MP (OIS) + 12MP + 5MP",
-        battery: "5000 mAh (45W)",
-        category: ["work", "creator"],
+        id: 403, name: "Samsung Galaxy A56 5G", price: 6499000, brand: "Samsung",
+        screen: "6.6' Super AMOLED 120Hz", chipset: "Exynos 1580", ram: "12GB", storage: "256GB",
+        camera: "50MP (OIS) + 12MP + 5MP", battery: "5000 mAh (45W)", category: ["work", "creator"],
         scores: { camera: 8.8, gaming: 8.0, battery: 9.0, multi: 9.0 },
         prevGen: "Performa GPU naik drastis (setara flagship lama), support charging 45W.",
         image: "samsung-galaxy-a56.jpg"
     },
     {
-        id: 404,
-        name: "Xiaomi 15",
-        price: 10999000,
-        brand: "Xiaomi",
-        screen: "6.36' LTPO AMOLED 120Hz",
-        chipset: "Snapdragon 8 Gen 4",
-        ram: "12GB",
-        storage: "256GB",
-        camera: "Leica 50MP Triple Cam",
-        battery: "5240 mAh (90W)",
-        category: ["camera", "work"],
+        id: 404, name: "Xiaomi 15", price: 10999000, brand: "Xiaomi",
+        screen: "6.36' LTPO AMOLED 120Hz", chipset: "Snapdragon 8 Gen 4", ram: "12GB", storage: "256GB",
+        camera: "Leica 50MP Triple Cam", battery: "5240 mAh (90W)", category: ["camera", "work"],
         scores: { camera: 9.4, gaming: 9.8, battery: 9.0, multi: 9.5 },
         prevGen: "Ukuran compact tapi baterai besar 5000mAh, lensa Leica Summilux terbaru.",
         image: "xiaomi-15.jpg"
     },
     {
-        id: 405,
-        name: "Asus Zenfone 12 Ultra",
-        price: 11499000,
-        brand: "Lainnya",
-        screen: "6.78' LTPO AMOLED 144Hz",
-        chipset: "Snapdragon 8 Elite",
-        ram: "16GB",
-        storage: "256GB",
-        camera: "50MP Gimbal OIS",
-        battery: "5500 mAh (65W)",
-        category: ["gaming", "camera"],
+        id: 405, name: "Asus Zenfone 12 Ultra", price: 11499000, brand: "Lainnya",
+        screen: "6.78' LTPO AMOLED 144Hz", chipset: "Snapdragon 8 Elite", ram: "16GB", storage: "256GB",
+        camera: "50MP Gimbal OIS", battery: "5500 mAh (65W)", category: ["gaming", "camera"],
         scores: { camera: 8.8, gaming: 9.0, battery: 9.2, multi: 9.0 },
         prevGen: "Stabilisasi video terbaik dengan Gimbal Hybrid 6-axis terbaru.",
         image: "asus-zenfone-12-ultra.jpg"
     },
     {
-        id: 406,
-        name: "Samsung Galaxy Z Flip 7",
-        price: 15999000,
-        brand: "Samsung",
-        screen: "6.9' Foldable Dynamic LTPO AMOLED",
-        chipset: "Exynos 2500",
-        ram: "12GB",
-        storage: "256GB",
-        camera: "50MP + 12MP",
-        battery: "4300 mAh (25W)",
-        category: ["creator", "basic"],
+        id: 406, name: "Samsung Galaxy Z Flip 7", price: 15999000, brand: "Samsung",
+        screen: "6.9' Foldable Dynamic LTPO AMOLED", chipset: "Exynos 2500", ram: "12GB", storage: "256GB",
+        camera: "50MP + 12MP", battery: "4300 mAh (25W)", category: ["creator", "basic"],
         scores: { camera: 8.8, gaming: 8.5, battery: 7.8, multi: 9.0 },
         prevGen: "Lipatan layar makin tidak terlihat (crease-less), cover screen lebih fungsional.",
         image: "samsung-galaxy-z-flip7.jpg"
     },
     {
-        id: 407,
-        name: "Google Pixel 9",
-        price: 12999000,
-        brand: "Lainnya",
-        screen: "6.3' OLED 120Hz",
-        chipset: "Google Tensor G4",
-        ram: "12GB",
-        storage: "128GB",
-        camera: "50MP + 48MP UW",
-        battery: "4700 mAh (27W)",
-        category: ["camera", "work"],
+        id: 407, name: "Google Pixel 9", price: 12999000, brand: "Lainnya",
+        screen: "6.3' OLED 120Hz", chipset: "Google Tensor G4", ram: "12GB", storage: "128GB",
+        camera: "50MP + 48MP UW", battery: "4700 mAh (27W)", category: ["camera", "work"],
         scores: { camera: 9.5, gaming: 7.5, battery: 8.5, multi: 9.0 },
         prevGen: "Raja fotografi komputasi, fitur AI Magic Editor makin canggih.",
         image: "google-pixel-9.jpg"
     },
     {
-        id: 408,
-        name: "iQoo 15 5G",
-        price: 10999000,
-        brand: "Lainnya",
-        screen: "6.85' 2K LTPO AMOLED 144Hz",
-        chipset: "Snapdragon 8 Elite Gen 5",
-        ram: "16GB",
-        storage: "512GB",
-        camera: "50MP VCS",
-        battery: "7000 mAh (100W)",
-        category: ["gaming", "work"],
+        id: 408, name: "iQoo 15 5G", price: 10999000, brand: "Lainnya",
+        screen: "6.85' 2K LTPO AMOLED 144Hz", chipset: "Snapdragon 8 Elite Gen 5", ram: "16GB", storage: "512GB",
+        camera: "50MP VCS", battery: "7000 mAh (100W)", category: ["gaming", "work"],
         scores: { camera: 8.8, gaming: 9.9, battery: 9.0, multi: 9.8 },
         prevGen: "Sistem pendingin VC terluas, layar 2K 144Hz ultra smooth untuk gaming kompetitif.",
         image: "iqoo-15.jpg"
     },
     {
-        id: 409,
-        name: "Samsung Galaxy S25 Ultra",
-        price: 21999000,
-        brand: "Samsung",
-        screen: "6.9' Dynamic AMOLED 2X Titanium",
-        chipset: "Snapdragon 8 Elite",
-        ram: "12GB",
-        storage: "512GB",
-        camera: "200MP + 50MP 5x Tele",
-        battery: "5000 mAh (45W)",
-        category: ["camera", "work", "gaming"],
+        id: 409, name: "Samsung Galaxy S25 Ultra", price: 21999000, brand: "Samsung",
+        screen: "6.8' Dynamic AMOLED 2X Titanium", chipset: "Snapdragon 8 Elite", ram: "12GB", storage: "512GB",
+        camera: "200MP + 50MP 5x Tele", battery: "5000 mAh (45W)", category: ["camera", "work", "gaming"],
         scores: { camera: 9.9, gaming: 9.9, battery: 9.5, multi: 9.9 },
-        prevGen: "Frame titanium lebih kuat, layar paling terang, AI lebih canggih.",
+        prevGen: "Frame titanium lebih kuat, layar paling terang di dunia, AI lebih canggih.",
         image: "samsung-galaxy-s25-ultra.jpg"
     },
     {
-        id: 410,
-        name: "iPhone 16 Pro Max",
-        price: 22999000,
-        brand: "Apple",
-        screen: "6.9' Super Retina XDR ProMotion",
-        chipset: "A18 Pro",
-        ram: "8GB",
-        storage: "256GB",
-        camera: "48MP Main + 48MP UW + 5x Tele",
-        battery: "4685 mAh (30W)",
-        category: ["camera", "creator", "gaming"],
+        id: 410, name: "iPhone 16 Pro Max", price: 22999000, brand: "Apple",
+        screen: "6.9' Super Retina XDR ProMotion", chipset: "A18 Pro", ram: "8GB", storage: "256GB",
+        camera: "48MP Main + 48MP UW + 5x Tele", battery: "4676 mAh (30W)", category: ["camera", "creator", "gaming"],
         scores: { camera: 10.0, gaming: 9.8, battery: 9.8, multi: 9.9 },
-        prevGen: "Layar besar untuk iPhone, tombol capture khusus kamera profesional.",
-        image: "apple-iphone-16-pro-max.jpg"
+        prevGen: "Layar terbesar di sejarah iPhone, tombol capture khusus kamera profesional.",
+        image: "iphone-16-pro-max.jpg"
     },
     {
-        id: 411,
-        name: "iPhone 16e",
-        price: 8499000,
-        brand: "Apple",
-        screen: "6.1' OLED",
-        chipset: "A18 Bionic",
-        ram: "8GB",
-        storage: "128GB",
-        camera: "48MP Main",
-        battery: "4005 mAh (20W)",
-        category: ["basic", "work"],
+        id: 411, name: "iPhone SE 4", price: 8499000, brand: "Apple",
+        screen: "6.1' OLED", chipset: "A18 Bionic", ram: "8GB", storage: "128GB",
+        camera: "48MP Main", battery: "3279 mAh (20W)", category: ["basic", "work"],
         scores: { camera: 8.8, gaming: 9.2, battery: 7.5, multi: 9.0 },
         prevGen: "Akhirnya menggunakan layar OLED penuh tanpa tombol home, desain modern ala iPhone 14.",
-        image: "apple-iphone-16e.jpg"
+        image: "iphone-se-4.jpg"
     },
     {
-        id: 412,
-        name: "iPhone 17",
-        price: 17499000,
-        brand: "Apple",
-        screen: "6.3' LTPO Super Retina XDR",
-        chipset: "A19 Bionic",
-        ram: "8GB",
-        storage: "128GB",
-        camera: "48MP Fusion + 48MP UW",
-        battery: "3692 mAh (30W)",
-        category: ["work", "creator", "camera"],
+        id: 412, name: "iPhone 17", price: 17499000, brand: "Apple",
+        screen: "6.2' LTPO Super Retina XDR", chipset: "A19 Bionic", ram: "8GB", storage: "128GB",
+        camera: "48MP Fusion + 12MP UW", battery: "3800 mAh (30W)", category: ["work", "creator", "camera"],
         scores: { camera: 9.6, gaming: 9.6, battery: 8.8, multi: 9.9 },
         prevGen: "Layar ProMotion 120Hz akhirnya hadir di model non-Pro, performa A19 tak tertandingi.",
-        image: "apple-iphone-17.jpg"
+        image: "iphone-17.jpg"
     },
     {
-        id: 413,
-        name: "iPhone 17 Pro",
-        price: 21999000,
-        brand: "Apple",
-        screen: "6.3' ProMotion XDR Titanium",
-        chipset: "A19 Pro",
-        ram: "12GB",
-        storage: "256GB",
-        camera: "48MP Triple Cam System",
-        battery: "4252 mAh (35W)",
-        category: ["camera", "work", "gaming"],
+        id: 413, name: "iPhone 17 Pro", price: 21999000, brand: "Apple",
+        screen: "6.3' ProMotion XDR Titanium", chipset: "A19 Pro", ram: "12GB", storage: "256GB",
+        camera: "48MP Triple Cam System", battery: "4000 mAh (35W)", category: ["camera", "work", "gaming"],
         scores: { camera: 9.9, gaming: 10.0, battery: 9.0, multi: 10.0 },
         prevGen: "Face ID di bawah layar, bezel tertipis di dunia, tombol solid-state haptic.",
-        image: "apple-iphone-17-pro.jpg"
+        image: "iphone-17-pro.jpg"
     },
     {
-        id: 414,
-        name: "iPhone 17 Pro Max",
-        price: 24999000,
-        brand: "Apple",
-        screen: "6.9' ProMotion XDR Titanium",
-        chipset: "A19 Pro",
-        ram: "12GB",
-        storage: "256GB",
-        camera: "48MP Main + 48MP Tele 10x",
-        battery: "5088 mAh (40W)",
-        category: ["camera", "creator", "gaming"],
+        id: 414, name: "iPhone 17 Pro Max", price: 24999000, brand: "Apple",
+        screen: "6.9' ProMotion XDR Titanium", chipset: "A19 Pro", ram: "12GB", storage: "256GB",
+        camera: "48MP Main + 48MP Tele 10x", battery: "4852 mAh (40W)", category: ["camera", "creator", "gaming"],
         scores: { camera: 10.0, gaming: 10.0, battery: 10.0, multi: 10.0 },
         prevGen: "Zoom optik 10x periskop, kemampuan rekam video spasial 8K.",
-        image: "apple-iphone-17-pro-max.jpg"
+        image: "iphone-17-pro-max.jpg"
     },
     {
-        id: 415,
-        name: "iPhone Air",
-        price: 18999000,
-        brand: "Apple",
-        screen: "6.6' Slim OLED ProMotion",
-        chipset: "A19 Pro Bionic",
-        ram: "8GB",
-        storage: "256GB",
-        camera: "48MP Single Wide",
-        battery: "3149 mAh (25W)",
-        category: ["basic", "work"],
-        scores: { camera: 9.0, gaming: 9.0, battery: 5.0, multi: 9.5 },
+        id: 415, name: "iPhone 17 Air", price: 18999000, brand: "Apple",
+        screen: "6.6' Slim OLED ProMotion", chipset: "A19 Bionic", ram: "8GB", storage: "256GB",
+        camera: "48MP Single Wide", battery: "3500 mAh (25W)", category: ["basic", "work"],
+        scores: { camera: 9.0, gaming: 9.0, battery: 8.0, multi: 9.5 },
         prevGen: "iPhone paling tipis yang pernah ada, desain ultra-minimalis, menggantikan seri Plus.",
-        image: "apple-iphone-air.jpg"
+        image: "iphone-17-air.jpg"
     }
 ];
-
-// --- TOGGLE MOBILE NAV (NEW) ---
-function toggleMobileNav() {
-    const menu = document.getElementById('mobile-nav-menu');
-    const icon = document.getElementById('mobile-nav-icon');
-    
-    menu.classList.toggle('hidden');
-    
-    if (menu.classList.contains('hidden')) {
-        icon.setAttribute('data-lucide', 'menu');
-    } else {
-        icon.setAttribute('data-lucide', 'x');
-    }
-    lucide.createIcons();
-}
-
-// ... (Sisa fungsi lainnya: filterByPrice, quickFilter, dll) ...
-// --- SAVED LOGIC UPDATE ---
-function updateSavedBadge() {
-    const badge = document.getElementById('saved-badge');
-    const mobileBadge = document.getElementById('mobile-saved-badge'); // New Badge for mobile
-    
-    if (badge) {
-        badge.innerText = savedList.length;
-        if (savedList.length > 0) badge.classList.remove('hidden');
-        else badge.classList.add('hidden');
-    }
-
-    if (mobileBadge) {
-        mobileBadge.innerText = savedList.length;
-        if (savedList.length > 0) mobileBadge.classList.remove('hidden');
-        else mobileBadge.classList.add('hidden');
-    }
-}
 
 // --- STATE ---
 let filteredPhones = [...smartphones];
@@ -758,14 +412,11 @@ const formatRupiah = (number) => {
 // --- RENDER LIST ---
 function renderPhones(phones) {
     const grid = document.getElementById('phoneGrid');
-    const count = document.getElementById('resultCount'); // Dikembalikan
+    const count = document.getElementById('resultCount');
 
-    // Cek keberadaan kedua elemen agar tidak error
     if (!grid || !count) return;
 
     grid.innerHTML = '';
-    
-    // Update teks jumlah produk
     count.innerText = `Menampilkan ${phones.length} produk`;
 
     if (phones.length === 0) {
@@ -781,9 +432,7 @@ function renderPhones(phones) {
         card.className = 'apple-card rounded-3xl p-6 relative flex flex-col h-full fade-in';
         card.style.animationDelay = `${index * 100}ms`;
         
-        // MODIFIKASI: Menambahkan onclick showDetail pada elemen pembungkus (kecuali tombol action)
         card.onclick = (e) => {
-            // Mencegah trigger saat klik tombol love atau compare
             if(e.target.closest('button') || e.target.closest('input')) return;
             showDetail(phone.id);
         };
@@ -848,7 +497,7 @@ function renderPhones(phones) {
     }
 }
 
-// --- DETAIL MODAL LOGIC (NEW) ---
+// --- DETAIL MODAL LOGIC ---
 function showDetail(id) {
     const phone = smartphones.find(p => p.id === id);
     if (!phone) return;
@@ -858,12 +507,10 @@ function showDetail(id) {
 
     content.innerHTML = `
         <div class="flex flex-col md:flex-row">
-            <!-- Left Side: Image -->
             <div class="w-full md:w-1/3 bg-gray-50 p-8 flex items-center justify-center rounded-t-[2.5rem] md:rounded-l-[2.5rem] md:rounded-tr-none">
                 <img src="${phone.image}" alt="${phone.name}" class="max-h-80 object-contain drop-shadow-xl" onerror="this.src='https://placehold.co/300x400?text=No+Image'">
             </div>
             
-            <!-- Right Side: Info -->
             <div class="w-full md:w-2/3 p-8 md:p-10">
                 <div class="mb-6">
                     <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-2 inline-block">${phone.brand}</span>
@@ -991,6 +638,54 @@ function applyAdvancedFilter() {
     renderPhones(filteredPhones);
 }
 
+// --- TOGGLE CATEGORIES (MOBILE ONLY) - FIX ---
+function toggleCategories() {
+    const content = document.getElementById('quick-categories-content');
+    const icon = document.getElementById('cat-toggle-icon');
+    
+    if (!content || !icon) return;
+
+    content.classList.toggle('hidden');
+    
+    const isHidden = content.classList.contains('hidden');
+    const iconName = isHidden ? 'chevron-down' : 'chevron-up';
+    
+    // Create new icon element
+    const newIcon = document.createElement('i');
+    newIcon.id = 'cat-toggle-icon';
+    newIcon.setAttribute('data-lucide', iconName);
+    newIcon.className = 'w-6 h-6 transition-transform duration-300';
+    
+    // Replace old icon
+    icon.parentNode.replaceChild(newIcon, icon);
+    
+    lucide.createIcons();
+}
+
+// --- TOGGLE MOBILE NAV (NEW) - FIX ---
+function toggleMobileNav() {
+    const menu = document.getElementById('mobile-nav-menu');
+    const icon = document.getElementById('mobile-nav-icon');
+    
+    if (!menu || !icon) return;
+
+    menu.classList.toggle('hidden');
+    
+    const isMenuOpen = !menu.classList.contains('hidden');
+    const iconName = isMenuOpen ? 'x' : 'menu';
+    
+    // Create new icon element
+    const newIcon = document.createElement('i');
+    newIcon.id = 'mobile-nav-icon';
+    newIcon.setAttribute('data-lucide', iconName);
+    newIcon.className = 'w-6 h-6';
+    
+    // Replace old icon
+    icon.parentNode.replaceChild(newIcon, icon);
+    
+    lucide.createIcons();
+}
+
 // --- COMPARISON ---
 function toggleCompare(id) {
     const index = compareList.indexOf(id);
@@ -1106,13 +801,18 @@ function toggleSave(id) {
 
 function updateSavedBadge() {
     const badge = document.getElementById('saved-badge');
-    if (!badge) return;
+    const mobileBadge = document.getElementById('mobile-saved-badge'); // New Badge for mobile
+    
+    if (badge) {
+        badge.innerText = savedList.length;
+        if (savedList.length > 0) badge.classList.remove('hidden');
+        else badge.classList.add('hidden');
+    }
 
-    badge.innerText = savedList.length;
-    if (savedList.length > 0) {
-        badge.classList.remove('hidden');
-    } else {
-        badge.classList.add('hidden');
+    if (mobileBadge) {
+        mobileBadge.innerText = savedList.length;
+        if (savedList.length > 0) mobileBadge.classList.remove('hidden');
+        else mobileBadge.classList.add('hidden');
     }
 }
 
@@ -1193,7 +893,6 @@ const quizQuestions = [
 ];
 
 let currentQ = 0;
-// Inisialisasi awal dengan minPrice 0
 let quizCriteria = { minPrice: 0, maxPrice: 99999999, category: null, brand: null };
 
 function startQuiz() {
@@ -1233,7 +932,6 @@ function renderQuestion() {
 }
 
 function handleAnswer(val) {
-    // Tangkap minPrice jika ada
     if (val.min !== undefined) quizCriteria.minPrice = val.min;
     if (val.max) quizCriteria.maxPrice = val.max;
     if (val.cat) quizCriteria.category = val.cat;
@@ -1257,14 +955,12 @@ function finishQuiz() {
     quizContainer.classList.add('hidden');
     quizResult.classList.remove('hidden');
 
-    // Filter Logic: Cek harga di antara minPrice dan maxPrice
     const matches = smartphones.filter(p => {
         const priceOk = p.price >= quizCriteria.minPrice && p.price <= quizCriteria.maxPrice;
         const brandOk = !quizCriteria.brand || quizCriteria.brand === 'all' || p.brand === quizCriteria.brand;
         return priceOk && brandOk;
     });
 
-    // Sort Logic
     if (quizCriteria.category) {
         matches.sort((a, b) => {
             const aHas = a.category.includes(quizCriteria.category) ? 1 : 0;
@@ -1273,8 +969,6 @@ function finishQuiz() {
         });
     }
 
-    // Fallback jika tidak ada yang cocok (ambil HP pertama dalam rentang harga)
-    // Jika benar-benar kosong, ambil HP pertama dari seluruh daftar sebagai fallback terakhir
     const best = matches[0] || smartphones[0];
 
     resDiv.innerHTML = `
@@ -1301,7 +995,4 @@ function finishQuiz() {
 
 function resetQuiz() {
     startQuiz();
-
 }
-
-
