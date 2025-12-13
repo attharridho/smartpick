@@ -1,0 +1,286 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #F5F5F7;
+    color: #1D1D1F;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    position: relative;
+    -webkit-tap-highlight-color: transparent; /* Hapus highlight biru saat tap di mobile */
+}
+
+/* --- LIQUID BACKGROUND ANIMATION --- */
+.liquid-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+    background: #fbfbfd;
+    pointer-events: none;
+}
+
+.blob {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.6;
+    animation: float 10s infinite ease-in-out alternate;
+    pointer-events: none;
+}
+
+.blob-1 {
+    top: -10%;
+    left: -10%;
+    width: 500px;
+    height: 500px;
+    background: #E0E7FF;
+    animation-delay: 0s;
+}
+
+.blob-2 {
+    bottom: -10%;
+    right: -10%;
+    width: 600px;
+    height: 600px;
+    background: #FCE7F3;
+    animation-delay: -2s;
+}
+
+.blob-3 {
+    top: 40%;
+    left: 40%;
+    width: 400px;
+    height: 400px;
+    background: #F3E8FF;
+    animation-delay: -4s;
+}
+
+/* Optimasi Blobs untuk Mobile: Ukuran lebih kecil & blur lebih ringan untuk performa */
+@media (max-width: 768px) {
+    .blob {
+        filter: blur(50px);
+        opacity: 0.5;
+    }
+    .blob-1 { width: 300px; height: 300px; }
+    .blob-2 { width: 350px; height: 350px; }
+    .blob-3 { width: 250px; height: 250px; }
+}
+
+@keyframes float {
+    0% { transform: translate(0, 0) scale(1); }
+    100% { transform: translate(30px, 50px) scale(1.1); }
+}
+
+/* --- APPLE GLASS CARD EFFECT --- */
+.apple-card {
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.05);
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    position: relative;
+    z-index: 10;
+}
+
+/* Efek Hover hanya untuk Desktop (Mouse) */
+@media (hover: hover) {
+    .apple-card:hover {
+        transform: translateY(-5px) scale(1.01);
+        background: rgba(255, 255, 255, 0.90);
+        box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+        border-color: #fff;
+        cursor: pointer;
+    }
+}
+
+/* Efek Tekan (Active) untuk Mobile */
+.apple-card:active {
+    transform: scale(0.98);
+    background: rgba(255, 255, 255, 0.95);
+    transition: 0.1s;
+}
+
+/* --- GLASS NAV --- */
+.glass-nav {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(25px) saturate(200%);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    transition: all 0.3s ease;
+}
+
+/* Optimasi Navigasi Mobile */
+@media (max-width: 640px) {
+    .glass-nav .max-w-6xl {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .glass-nav button {
+        padding: 0.35rem 0.75rem; /* Tombol lebih kecil di mobile */
+        font-size: 0.75rem;
+    }
+    .glass-nav .h-16 {
+        height: 3.5rem; /* Header lebih pendek di mobile */
+    }
+    /* Sembunyikan teks '2025' di layar sangat kecil jika perlu */
+    .glass-nav .text-xs { 
+        display: none; 
+    }
+}
+
+/* --- BUTTONS --- */
+.btn-glass-primary {
+    background: #0071E3;
+    color: white;
+    box-shadow: 0 4px 15px rgba(0, 113, 227, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.2s ease;
+}
+
+@media (hover: hover) {
+    .btn-glass-primary:hover {
+        background: #0077ED;
+        box-shadow: 0 6px 20px rgba(0, 113, 227, 0.4);
+    }
+}
+
+.btn-glass-primary:active {
+    transform: scale(0.96);
+    box-shadow: 0 2px 10px rgba(0, 113, 227, 0.2);
+}
+
+.btn-glass-secondary {
+    background: rgba(255, 255, 255, 0.6);
+    color: #1D1D1F;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    transition: all 0.2s ease;
+}
+
+.btn-glass-secondary:active {
+    background: rgba(255, 255, 255, 0.8);
+    transform: scale(0.96);
+}
+
+/* --- GLOBAL SCROLLBAR --- */
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,0.2);
+    border-radius: 10px;
+    border: 3px solid transparent;
+    background-clip: content-box;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0,0,0,0.4);
+    background-clip: content-box;
+}
+
+/* Scrollbar lebih tipis di Mobile */
+@media (max-width: 768px) {
+    ::-webkit-scrollbar {
+        width: 4px; 
+    }
+    ::-webkit-scrollbar-thumb {
+        background: rgba(0,0,0,0.1);
+    }
+}
+
+/* --- MODAL SCROLLBAR FIX (NEW) --- */
+/* Scrollbar khusus untuk modal agar tidak menabrak sudut rounded */
+.modal-scroll::-webkit-scrollbar {
+    width: 6px; /* Lebih tipis agar elegan */
+}
+.modal-scroll::-webkit-scrollbar-track {
+    background: transparent;
+    margin-block: 2.5rem; /* Memberi jarak atas/bawah agar tidak menabrak rounded corner */
+}
+.modal-scroll::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.15); /* Warna lebih soft */
+    border-radius: 10px;
+    border: 1px solid transparent; /* Border tipis */
+    background-clip: content-box;
+}
+.modal-scroll::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+/* Custom Checkbox */
+.checkbox-wrapper input:checked + div {
+    background-color: #0071E3;
+    border-color: #0071E3;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+/* --- FIX COMPARE BAR & MOBILE OVERRIDES --- */
+#compare-bar {
+    z-index: 100 !important; /* Pastikan selalu di atas elemen lain */
+    width: 90%; /* Lebar responsif */
+    max-width: 600px;
+    left: 50%;
+    transform: translateX(-50%) translateY(150%); /* Start hidden */
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    bottom: 20px;
+    /* Safe area untuk iPhone X ke atas */
+    padding-bottom: max(1rem, env(safe-area-inset-bottom));
+}
+
+#compare-bar:not(.translate-y-full) {
+    transform: translateX(-50%) translateY(0) !important; /* Show state */
+}
+
+/* --- RESULT COUNT BADGE FIX (MOBILE) --- */
+@media (max-width: 640px) {
+    #resultCount {
+        font-size: 0.7rem;
+        padding: 4px 8px;
+        white-space: nowrap;
+        align-self: center; /* Rata tengah dengan judul, bukan rata bawah */
+        background-color: rgba(255, 255, 255, 0.9);
+        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        border: 1px solid rgba(0,0,0,0.05);
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bounce-small {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+.animate-bounce-small {
+    animation: bounce-small 2s infinite;
+}
+
+/* --- ZOOM IN ANIMATION --- */
+.zoom-in {
+    animation: zoomIn 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
