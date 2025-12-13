@@ -22,20 +22,49 @@
     <nav class="fixed top-0 w-full z-50 glass-nav">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
                 <div class="flex items-center space-x-2 cursor-pointer" onclick="showSection('home')">
                     <div class="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center text-white shadow-lg shadow-blue-500/30">
                         <i data-lucide="smartphone" class="w-6 h-6"></i>
                     </div>
                     <span class="font-bold text-xl tracking-tight text-gray-900">SmartPick <span class="text-xs bg-black/5 text-gray-600 px-2 py-0.5 rounded-full ml-1 border border-black/5">2025</span></span>
                 </div>
-                <div class="flex space-x-1 p-1 bg-gray-100/50 rounded-full border border-white/50 backdrop-blur-md">
-                    <button onclick="showSection('home')" class="px-3 py-1.5 rounded-full text-sm font-medium text-gray-600 hover:bg-white hover:shadow-sm transition-all">Beranda</button>
-                    <button onclick="showSection('quiz')" class="px-3 py-1.5 rounded-full text-sm font-medium text-gray-600 hover:bg-white hover:shadow-sm transition-all">Kuis</button>
-                    <button onclick="showSection('learn')" class="px-3 py-1.5 rounded-full text-sm font-medium text-gray-600 hover:bg-white hover:shadow-sm transition-all">Kamus</button>
-                    <button onclick="showSection('saved')" class="px-3 py-1.5 rounded-full text-sm font-medium text-gray-600 hover:bg-white hover:shadow-sm transition-all relative">
+
+                <!-- Desktop Menu (Hidden on Mobile) -->
+                <div class="hidden md:flex space-x-1 p-1 bg-gray-100/50 rounded-full border border-white/50 backdrop-blur-md">
+                    <button onclick="showSection('home')" class="px-4 py-1.5 rounded-full text-sm font-medium text-gray-600 hover:bg-white hover:shadow-sm transition-all">Beranda</button>
+                    <button onclick="showSection('quiz')" class="px-4 py-1.5 rounded-full text-sm font-medium text-gray-600 hover:bg-white hover:shadow-sm transition-all">Kuis</button>
+                    <button onclick="showSection('learn')" class="px-4 py-1.5 rounded-full text-sm font-medium text-gray-600 hover:bg-white hover:shadow-sm transition-all">Kamus</button>
+                    <button onclick="showSection('saved')" class="px-4 py-1.5 rounded-full text-sm font-medium text-gray-600 hover:bg-white hover:shadow-sm transition-all relative">
                         Simpan <span id="saved-badge" class="hidden absolute -top-1 -right-1 bg-red-500 text-white text-[10px] w-4 h-4 flex items-center justify-center rounded-full shadow-sm">0</span>
                     </button>
                 </div>
+
+                <!-- Mobile Menu Button (Visible on Mobile Only) -->
+                <div class="md:hidden">
+                    <button onclick="toggleMobileNav()" class="p-2 rounded-xl bg-gray-100/50 border border-white/50 text-gray-700">
+                        <i id="mobile-nav-icon" data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Menu (Hidden by default) -->
+        <div id="mobile-nav-menu" class="hidden md:hidden absolute top-16 left-0 w-full bg-white/95 backdrop-blur-xl border-b border-gray-200 shadow-xl transition-all duration-300 ease-in-out">
+            <div class="flex flex-col p-4 space-y-2">
+                <button onclick="showSection('home'); toggleMobileNav()" class="text-left px-4 py-3 rounded-xl hover:bg-gray-100 font-medium text-gray-700 flex items-center">
+                    <i data-lucide="home" class="w-5 h-5 mr-3 text-blue-600"></i> Beranda
+                </button>
+                <button onclick="showSection('quiz'); toggleMobileNav()" class="text-left px-4 py-3 rounded-xl hover:bg-gray-100 font-medium text-gray-700 flex items-center">
+                    <i data-lucide="zap" class="w-5 h-5 mr-3 text-purple-600"></i> Kuis Cepat
+                </button>
+                <button onclick="showSection('learn'); toggleMobileNav()" class="text-left px-4 py-3 rounded-xl hover:bg-gray-100 font-medium text-gray-700 flex items-center">
+                    <i data-lucide="book-open" class="w-5 h-5 mr-3 text-green-600"></i> Kamus & Tips
+                </button>
+                <button onclick="showSection('saved'); toggleMobileNav()" class="text-left px-4 py-3 rounded-xl hover:bg-gray-100 font-medium text-gray-700 flex items-center justify-between">
+                    <span class="flex items-center"><i data-lucide="heart" class="w-5 h-5 mr-3 text-red-500"></i> Disimpan</span>
+                    <span id="mobile-saved-badge" class="bg-red-100 text-red-600 text-xs font-bold px-2 py-1 rounded-full hidden">0</span>
+                </button>
             </div>
         </div>
     </nav>
@@ -77,11 +106,11 @@
                         <span class="font-bold text-gray-800 text-lg">Kategori & Harga</span>
                     </div>
                     <button class="p-2 rounded-xl bg-white border border-gray-200 text-gray-600 shadow-sm">
-                        <i id="cat-toggle-icon" data-lucide="menu" class="w-6 h-6 transition-transform duration-300"></i>
+                        <i id="cat-toggle-icon" data-lucide="chevron-down" class="w-6 h-6 transition-transform duration-300"></i>
                     </button>
                 </div>
 
-                <!-- Collapsible Content (Hidden by default on mobile, visible on desktop) -->
+                <!-- Collapsible Content -->
                 <div id="quick-categories-content" class="hidden md:block space-y-12 transition-all duration-500 ease-in-out">
                     <!-- Activity Based -->
                     <div>
