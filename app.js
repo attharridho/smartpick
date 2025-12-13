@@ -16,7 +16,7 @@ const smartphones = [
         category: ["basic", "gaming"],
         scores: { camera: 6.5, gaming: 7.5, battery: 9.5, multi: 7.0 },
         prevGen: "Upgrade baterai lebih besar dari P55, layar lebih luas dengan refresh rate tinggi.",
-        image: "assets/itel-p65.jpg"
+        image: "itel-p65.jpg"
     },
     {
         id: 102,
@@ -32,7 +32,7 @@ const smartphones = [
         category: ["basic", "work"],
         scores: { camera: 7.0, gaming: 6.5, battery: 8.5, multi: 7.5 },
         prevGen: "Desain lebih tipis dari 13C, charging lebih cepat 33W.",
-        image: "assets/xiaomi-redmi-14c.jpg"
+        image: "xiaomi-redmi-14c.jpg"
     },
     {
         id: 103,
@@ -48,7 +48,7 @@ const smartphones = [
         category: ["basic", "work"],
         scores: { camera: 7.2, gaming: 6.0, battery: 8.5, multi: 7.0 },
         prevGen: "Peningkatan dari A05s: Layar lebih mulus 90Hz dan manajemen daya lebih baik.",
-        image: "assets/samsung-galaxy-a06.jpg"
+        image: "samsung-galaxy-a06.jpg"
     },
     {
         id: 104,
@@ -64,7 +64,7 @@ const smartphones = [
         category: ["gaming", "camera"],
         scores: { camera: 7.5, gaming: 7.8, battery: 8.0, multi: 7.5 },
         prevGen: "Kamera lompat ke 50MP di kelas harga murah, chipset gaming entry level baru.",
-        image: "assets/infinix-hot-50pro4g.jpg"
+        image: "infinix-hot-50pro4g.jpg"
     },
     {
         id: 105,
@@ -80,7 +80,7 @@ const smartphones = [
         category: ["basic"],
         scores: { camera: 6.8, gaming: 7.0, battery: 8.5, multi: 7.0 },
         prevGen: "Desain fresh, RAM bawaan besar 8GB standar.",
-        image: "assets/tecno-spark-30.jpg"
+        image: "tecno-spark-30.jpg"
     },
     {
         id: 106,
@@ -96,7 +96,7 @@ const smartphones = [
         category: ["basic", "camera"],
         scores: { camera: 7.3, gaming: 6.0, battery: 8.5, multi: 6.5 },
         prevGen: "Fokus pada desain stylish dan hasil foto potret khas Vivo di harga terjangkau.",
-        image: "assets/vivo-y04.jpg"
+        image: "vivo-y04.jpg"
     },
     {
         id: 107,
@@ -112,7 +112,7 @@ const smartphones = [
         category: ["camera", "work"],
         scores: { camera: 7.8, gaming: 6.8, battery: 8.5, multi: 7.5 },
         prevGen: "Versi refresh dengan optimasi software kamera 108MP yang lebih stabil.",
-        image: "assets/realme-c67.jpg"
+        image: "realme-c67.jpg"
     },
 
     // --- KATEGORI 2: 2 - 4 JUTA (MID RANGE) ---
@@ -130,7 +130,7 @@ const smartphones = [
         category: ["work", "basic"],
         scores: { camera: 8.0, gaming: 7.0, battery: 9.0, multi: 8.0 },
         prevGen: "Jaminan update OS 6 tahun pertama di seri A1x, layar AMOLED lebih terang.",
-        image: "assets/samsung-galaxy-a165g.jpg"
+        image: "samsung-galaxy-a165g.jpg"
     },
     {
         id: 202,
@@ -146,7 +146,7 @@ const smartphones = [
         category: ["gaming", "creator"],
         scores: { camera: 7.8, gaming: 8.0, battery: 8.5, multi: 8.0 },
         prevGen: "Bezel layar super tipis, desain lebih premium mirip seri Pro.",
-        image: "assets/xiaomi-redmi-note-145g.jpg"
+        image: "xiaomi-redmi-note-145g.jpg"
     },
     {
         id: 203,
@@ -162,7 +162,7 @@ const smartphones = [
         category: ["gaming", "work"],
         scores: { camera: 7.5, gaming: 8.5, battery: 8.8, multi: 8.5 },
         prevGen: "Charging lebih ngebut 100W, chipset 4nm hemat daya.",
-        image: "assets/infinix-note50-pro-plus-5g.jpg"
+        image: "infinix-note50-pro-plus-5g.jpg"
     },
     {
         id: 204,
@@ -178,7 +178,7 @@ const smartphones = [
         category: ["gaming", "camera"],
         scores: { camera: 7.8, gaming: 8.2, battery: 9.0, multi: 8.0 },
         prevGen: "Stabilisasi OIS kini hadir di seri M, layar Flow AMOLED bezel tipis.",
-        image: "assets/xiaomi-poco-m7-pro-5g.jpg"
+        image: "xiaomi-poco-m7-pro-5g.jpg"
     },
     {
         id: 205,
@@ -194,7 +194,7 @@ const smartphones = [
         category: ["camera", "work"],
         scores: { camera: 8.0, gaming: 7.0, battery: 9.2, multi: 8.0 },
         prevGen: "Charging kilat 80W tercepat di kelasnya, bodi kulit fiber premium.",
-        image: "assets/vivo-y100-5g.jpg"
+        image: "vivo-y100-5g.jpg"
     },
     {
         id: 206,
@@ -210,7 +210,7 @@ const smartphones = [
         category: ["camera", "creator"],
         scores: { camera: 8.5, gaming: 8.0, battery: 8.5, multi: 8.5 },
         prevGen: "Sensor kamera flagship Sony IMX890 di harga menengah.",
-        image: "assets/tecno-camon-30-premier-5g.jpg"
+        image: "tecno-camon-30-premier-5g.jpg"
     },
     {
         id: 207,
@@ -226,7 +226,7 @@ const smartphones = [
         category: ["camera", "gaming"],
         scores: { camera: 8.2, gaming: 7.8, battery: 8.5, multi: 8.2 },
         prevGen: "Sensor Sony baru untuk foto low-light lebih jernih.",
-        image: "assets/realme-13-plus-5g.jpg"
+        image: "realme-13-plus-5g.jpg"
     },
     {
         id: 208,
@@ -242,7 +242,7 @@ const smartphones = [
         category: ["gaming", "work"],
         scores: { camera: 7.8, gaming: 9.3, battery: 9.5, multi: 8.8 },
         prevGen: "Baterai monster 6000mAh dengan bodi tipis, layar 144Hz paling smooth di kelasnya.",
-        image: "assets/iqoo-z10r.jpg"
+        image: "iqoo-z10r.jpg"
     },
 
     // --- KATEGORI 3: 4 - 6 JUTA (UPPER MID) ---
@@ -260,7 +260,7 @@ const smartphones = [
         category: ["work", "creator", "camera"],
         scores: { camera: 8.5, gaming: 7.5, battery: 9.0, multi: 8.5 },
         prevGen: "Desain Key Island baru, bezel lebih tipis dari A35.",
-        image: "assets/samsung-galaxy-a36.jpg"
+        image: "samsung-galaxy-a36.jpg"
     },
     {
         id: 302,
@@ -276,7 +276,7 @@ const smartphones = [
         category: ["camera", "gaming"],
         scores: { camera: 9.0, gaming: 8.5, battery: 9.2, multi: 9.0 },
         prevGen: "IP68 Tahan air penuh, layar lengkung premium, ada lensa telephoto.",
-        image: "assets/xiaomi-redmi-note-14-pro-plus-5g.jpg"
+        image: "xiaomi-redmi-note-14-pro-plus-5g.jpg"
     },
     {
         id: 303,
@@ -292,7 +292,7 @@ const smartphones = [
         category: ["gaming", "work"],
         scores: { camera: 7.8, gaming: 9.8, battery: 9.0, multi: 9.5 },
         prevGen: "Performa flagship killer sejati, baterai badak 5500 mAh.",
-        image: "assets/xiaomi-poco-f7.jpg"
+        image: "xiaomi-poco-f7.jpg"
     },
     {
         id: 304,
@@ -308,7 +308,7 @@ const smartphones = [
         category: ["gaming"],
         scores: { camera: 7.5, gaming: 9.5, battery: 8.5, multi: 8.8 },
         prevGen: "Chipset jauh lebih kencang (setara flagship tahun lalu), lampu LED mecha lebih interaktif.",
-        image: "assets/infinix-gt30-pro.jpg"
+        image: "infinix-gt30-pro.jpg"
     },
     {
         id: 305,
@@ -324,7 +324,7 @@ const smartphones = [
         category: ["camera", "creator"],
         scores: { camera: 9.2, gaming: 7.5, battery: 9.5, multi: 8.5 },
         prevGen: "Kolaborasi ZEISS masuk ke seri V lebih murah, hasil foto potret level profesional.",
-        image: "assets/vivo-v40e.jpg"
+        image: "vivo-v40e.jpg"
     },
     {
         id: 306,
@@ -340,7 +340,7 @@ const smartphones = [
         category: ["camera", "basic"],
         scores: { camera: 8.5, gaming: 7.0, battery: 8.5, multi: 8.0 },
         prevGen: "Fitur AI Generative (hapus objek foto) hadir di harga terjangkau.",
-        image: "assets/oppo-reno12-f.jpg"
+        image: "oppo-reno12-f.jpg"
     },
     {
         id: 307,
@@ -356,7 +356,7 @@ const smartphones = [
         category: ["camera", "creator"],
         scores: { camera: 8.8, gaming: 7.5, battery: 9.0, multi: 8.5 },
         prevGen: "Desain Monet Gold mewah, sensor kamera Sony LYT baru.",
-        image: "assets/realme-13-pro.jpg"
+        image: "realme-13-pro.jpg"
     },
     {
         id: 308,
@@ -372,7 +372,7 @@ const smartphones = [
         category: ["work", "basic"],
         scores: { camera: 8.2, gaming: 7.8, battery: 9.5, multi: 8.2 },
         prevGen: "Bodi super tipis dengan baterai besar, chipset Snapdragon yang efisien.",
-        image: "assets/samsung-galaxy-m55s.jpg"
+        image: "samsung-galaxy-m55s.jpg"
     },
     {
         id: 310,
@@ -388,7 +388,7 @@ const smartphones = [
         category: ["gaming", "work"],
         scores: { camera: 8.0, gaming: 8.8, battery: 7.8, multi: 8.5 },
         prevGen: "Layar dan Body Gorilla Glass Victus+, baterai tetap besar 5000mAh.",
-        image: "assets/samsung-galaxy-m56.jpg"
+        image: "samsung-galaxy-m56.jpg"
     },
 
     // --- KATEGORI 4: DI ATAS 6 JUTA (FLAGSHIP) ---
@@ -406,7 +406,7 @@ const smartphones = [
         category: ["work", "creator", "camera"],
         scores: { camera: 9.5, gaming: 9.5, battery: 8.5, multi: 9.8 },
         prevGen: "Tombol 'Action Button' & 'Capture Button' baru, chip A18 super kencang untuk AI.",
-        image: "assets/apple-iphone-16.jpg"
+        image: "apple-iphone-16.jpg"
     },
     {
         id: 402,
@@ -422,7 +422,7 @@ const smartphones = [
         category: ["work", "camera", "basic"],
         scores: { camera: 9.2, gaming: 9.2, battery: 8.0, multi: 9.5 },
         prevGen: "Bezel layar makin tipis, integrasi Galaxy AI generasi kedua lebih pintar.",
-        image: "assets/samsung-galaxy-s25.jpg"
+        image: "samsung-galaxy-s25.jpg"
     },
     {
         id: 403,
@@ -438,7 +438,7 @@ const smartphones = [
         category: ["work", "creator"],
         scores: { camera: 8.8, gaming: 8.0, battery: 9.0, multi: 9.0 },
         prevGen: "Performa GPU naik drastis (setara flagship lama), support charging 45W.",
-        image: "assets/samsung-galaxy-a56.jpg"
+        image: "samsung-galaxy-a56.jpg"
     },
     {
         id: 404,
@@ -454,7 +454,7 @@ const smartphones = [
         category: ["camera", "work"],
         scores: { camera: 9.4, gaming: 9.8, battery: 9.0, multi: 9.5 },
         prevGen: "Ukuran compact tapi baterai besar 5000mAh, lensa Leica Summilux terbaru.",
-        image: "assets/xiaomi-15.jpg"
+        image: "xiaomi-15.jpg"
     },
     {
         id: 405,
@@ -470,7 +470,7 @@ const smartphones = [
         category: ["gaming", "camera"],
         scores: { camera: 8.8, gaming: 9.0, battery: 9.2, multi: 9.0 },
         prevGen: "Stabilisasi video terbaik dengan Gimbal Hybrid 6-axis terbaru.",
-        image: "assets/asus-zenfone-12-ultra.jpg"
+        image: "asus-zenfone-12-ultra.jpg"
     },
     {
         id: 406,
@@ -486,7 +486,7 @@ const smartphones = [
         category: ["creator", "basic"],
         scores: { camera: 8.8, gaming: 8.5, battery: 7.8, multi: 9.0 },
         prevGen: "Lipatan layar makin tidak terlihat (crease-less), cover screen lebih fungsional.",
-        image: "assets/samsung-galaxy-z-flip7.jpg"
+        image: "samsung-galaxy-z-flip7.jpg"
     },
     {
         id: 407,
@@ -502,7 +502,7 @@ const smartphones = [
         category: ["camera", "work"],
         scores: { camera: 9.5, gaming: 7.5, battery: 8.5, multi: 9.0 },
         prevGen: "Raja fotografi komputasi, fitur AI Magic Editor makin canggih.",
-        image: "assets/google-pixel-9.jpg"
+        image: "google-pixel-9.jpg"
     },
     {
         id: 408,
@@ -518,7 +518,7 @@ const smartphones = [
         category: ["gaming", "work"],
         scores: { camera: 8.8, gaming: 9.9, battery: 9.0, multi: 9.8 },
         prevGen: "Sistem pendingin VC terluas, layar 2K 144Hz ultra smooth untuk gaming kompetitif.",
-        image: "assets/iqoo-15.jpg"
+        image: "iqoo-15.jpg"
     },
     {
         id: 409,
@@ -534,7 +534,7 @@ const smartphones = [
         category: ["camera", "work", "gaming"],
         scores: { camera: 9.9, gaming: 9.9, battery: 9.5, multi: 9.9 },
         prevGen: "Frame titanium lebih kuat, layar paling terang, AI lebih canggih.",
-        image: "assets/samsung-galaxy-s25-ultra.jpg"
+        image: "samsung-galaxy-s25-ultra.jpg"
     },
     {
         id: 410,
@@ -550,7 +550,7 @@ const smartphones = [
         category: ["camera", "creator", "gaming"],
         scores: { camera: 10.0, gaming: 9.8, battery: 9.8, multi: 9.9 },
         prevGen: "Layar besar untuk iPhone, tombol capture khusus kamera profesional.",
-        image: "assets/apple-iphone-16-pro-max.jpg"
+        image: "apple-iphone-16-pro-max.jpg"
     },
     {
         id: 411,
@@ -566,7 +566,7 @@ const smartphones = [
         category: ["basic", "work"],
         scores: { camera: 8.8, gaming: 9.2, battery: 7.5, multi: 9.0 },
         prevGen: "Akhirnya menggunakan layar OLED penuh tanpa tombol home, desain modern ala iPhone 14.",
-        image: "assets/apple-iphone-16e.jpg"
+        image: "apple-iphone-16e.jpg"
     },
     {
         id: 412,
@@ -582,7 +582,7 @@ const smartphones = [
         category: ["work", "creator", "camera"],
         scores: { camera: 9.6, gaming: 9.6, battery: 8.8, multi: 9.9 },
         prevGen: "Layar ProMotion 120Hz akhirnya hadir di model non-Pro, performa A19 tak tertandingi.",
-        image: "assets/apple-iphone-17.jpg"
+        image: "apple-iphone-17.jpg"
     },
     {
         id: 413,
@@ -598,7 +598,7 @@ const smartphones = [
         category: ["camera", "work", "gaming"],
         scores: { camera: 9.9, gaming: 10.0, battery: 9.0, multi: 10.0 },
         prevGen: "Face ID di bawah layar, bezel tertipis di dunia, tombol solid-state haptic.",
-        image: "assets/apple-iphone-17-pro.jpg"
+        image: "apple-iphone-17-pro.jpg"
     },
     {
         id: 414,
@@ -614,7 +614,7 @@ const smartphones = [
         category: ["camera", "creator", "gaming"],
         scores: { camera: 10.0, gaming: 10.0, battery: 10.0, multi: 10.0 },
         prevGen: "Zoom optik 10x periskop, kemampuan rekam video spasial 8K.",
-        image: "assets/apple-iphone-17-pro-max.jpg"
+        image: "apple-iphone-17-pro-max.jpg"
     },
     {
         id: 415,
@@ -630,7 +630,7 @@ const smartphones = [
         category: ["basic", "work"],
         scores: { camera: 9.0, gaming: 9.0, battery: 5.0, multi: 9.5 },
         prevGen: "iPhone paling tipis yang pernah ada, desain ultra-minimalis, menggantikan seri Plus.",
-        image: "assets/apple-iphone-air.jpg"
+        image: "apple-iphone-air.jpg"
     }
 ];
 
@@ -1267,4 +1267,5 @@ function finishQuiz() {
 
 function resetQuiz() {
     startQuiz();
+
 }
