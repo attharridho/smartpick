@@ -650,14 +650,9 @@ function toggleCategories() {
     const isHidden = content.classList.contains('hidden');
     const iconName = isHidden ? 'chevron-down' : 'chevron-up';
     
-    // Create new icon element
-    const newIcon = document.createElement('i');
-    newIcon.id = 'cat-toggle-icon';
-    newIcon.setAttribute('data-lucide', iconName);
-    newIcon.className = 'w-6 h-6 transition-transform duration-300';
-    
-    // Replace old icon
-    icon.parentNode.replaceChild(newIcon, icon);
+    // Create new icon element and REPLACE parent html to ensure clean state
+    const btn = icon.parentElement;
+    btn.innerHTML = `<i id="cat-toggle-icon" data-lucide="${iconName}" class="w-6 h-6 transition-transform duration-300"></i>`;
     
     lucide.createIcons();
 }
@@ -674,14 +669,9 @@ function toggleMobileNav() {
     const isMenuOpen = !menu.classList.contains('hidden');
     const iconName = isMenuOpen ? 'x' : 'menu';
     
-    // Create new icon element
-    const newIcon = document.createElement('i');
-    newIcon.id = 'mobile-nav-icon';
-    newIcon.setAttribute('data-lucide', iconName);
-    newIcon.className = 'w-6 h-6';
-    
-    // Replace old icon
-    icon.parentNode.replaceChild(newIcon, icon);
+    // REPLACE INNER HTML of parent button to prevent reference loss with Lucide
+    const btn = icon.parentElement;
+    btn.innerHTML = `<i id="mobile-nav-icon" data-lucide="${iconName}" class="w-6 h-6"></i>`;
     
     lucide.createIcons();
 }
@@ -932,6 +922,7 @@ function renderQuestion() {
 }
 
 function handleAnswer(val) {
+    // Tangkap minPrice jika ada
     if (val.min !== undefined) quizCriteria.minPrice = val.min;
     if (val.max) quizCriteria.maxPrice = val.max;
     if (val.cat) quizCriteria.category = val.cat;
@@ -955,12 +946,14 @@ function finishQuiz() {
     quizContainer.classList.add('hidden');
     quizResult.classList.remove('hidden');
 
+    // Filter Logic: Cek harga di antara minPrice dan maxPrice
     const matches = smartphones.filter(p => {
         const priceOk = p.price >= quizCriteria.minPrice && p.price <= quizCriteria.maxPrice;
         const brandOk = !quizCriteria.brand || quizCriteria.brand === 'all' || p.brand === quizCriteria.brand;
         return priceOk && brandOk;
     });
 
+    // Sort Logic
     if (quizCriteria.category) {
         matches.sort((a, b) => {
             const aHas = a.category.includes(quizCriteria.category) ? 1 : 0;
@@ -969,6 +962,8 @@ function finishQuiz() {
         });
     }
 
+    // Fallback jika tidak ada yang cocok (ambil HP pertama dalam rentang harga)
+    // Jika benar-benar kosong, ambil HP pertama dari seluruh daftar sebagai fallback terakhir
     const best = matches[0] || smartphones[0];
 
     resDiv.innerHTML = `
