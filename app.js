@@ -638,40 +638,121 @@ function applyAdvancedFilter() {
     renderPhones(filteredPhones);
 }
 
-// --- TOGGLE CATEGORIES (MOBILE ONLY) - FIX ---
+// --- TOGGLE CATEGORIES (MOBILE ONLY) - FIX & ANIMATION ---
 function toggleCategories() {
     const content = document.getElementById('quick-categories-content');
     const icon = document.getElementById('cat-toggle-icon');
     
     if (!content || !icon) return;
 
-    content.classList.toggle('hidden');
-    
-    const isHidden = content.classList.contains('hidden');
-    const iconName = isHidden ? 'chevron-down' : 'chevron-up';
-    
-    // Create new icon element and REPLACE parent html to ensure clean state
     const btn = icon.parentElement;
-    btn.innerHTML = `<i id="cat-toggle-icon" data-lucide="${iconName}" class="w-6 h-6 transition-transform duration-300"></i>`;
+    
+    if (content.classList.contains('hidden')) {
+        // OPEN
+        content.classList.remove('hidden');
+        content.style.maxHeight = '0';
+        content.style.opacity = '0';
+        content.style.overflow = 'hidden';
+        content.style.transition = 'all 0.4s ease-out';
+        
+        requestAnimationFrame(() => {
+            content.style.maxHeight = content.scrollHeight + 'px';
+            content.style.opacity = '1';
+        });
+        
+        // Icon to Up
+        btn.innerHTML = `<i id="cat-toggle-icon" data-lucide="chevron-up" class="w-6 h-6 transition-transform duration-300"></i>`;
+        
+        // Reset styles after animation
+        setTimeout(() => {
+            content.style.maxHeight = '';
+            content.style.opacity = '';
+            content.style.overflow = '';
+            content.style.transition = '';
+        }, 400);
+
+    } else {
+        // CLOSE
+        content.style.maxHeight = content.scrollHeight + 'px';
+        content.style.opacity = '1';
+        content.style.overflow = 'hidden';
+        content.style.transition = 'all 0.4s ease-in';
+        
+        requestAnimationFrame(() => {
+            content.style.maxHeight = '0';
+            content.style.opacity = '0';
+        });
+
+        // Icon to Down
+        btn.innerHTML = `<i id="cat-toggle-icon" data-lucide="chevron-down" class="w-6 h-6 transition-transform duration-300"></i>`;
+
+        setTimeout(() => {
+            content.classList.add('hidden');
+            content.style.maxHeight = '';
+            content.style.opacity = '';
+            content.style.overflow = '';
+            content.style.transition = '';
+        }, 400);
+    }
     
     lucide.createIcons();
 }
 
-// --- TOGGLE MOBILE NAV (NEW) - FIX ---
+// --- TOGGLE MOBILE NAV (NEW) - FIX & ANIMATION ---
 function toggleMobileNav() {
     const menu = document.getElementById('mobile-nav-menu');
     const icon = document.getElementById('mobile-nav-icon');
     
     if (!menu || !icon) return;
 
-    menu.classList.toggle('hidden');
-    
-    const isMenuOpen = !menu.classList.contains('hidden');
-    const iconName = isMenuOpen ? 'x' : 'menu';
-    
-    // REPLACE INNER HTML of parent button to prevent reference loss with Lucide
     const btn = icon.parentElement;
-    btn.innerHTML = `<i id="mobile-nav-icon" data-lucide="${iconName}" class="w-6 h-6"></i>`;
+    
+    if (menu.classList.contains('hidden')) {
+        // OPEN
+        menu.classList.remove('hidden');
+        menu.style.maxHeight = '0';
+        menu.style.opacity = '0';
+        menu.style.overflow = 'hidden';
+        menu.style.transition = 'all 0.4s ease-out';
+        
+        requestAnimationFrame(() => {
+            menu.style.maxHeight = menu.scrollHeight + 'px';
+            menu.style.opacity = '1';
+        });
+        
+        // Icon to Close
+        btn.innerHTML = `<i id="mobile-nav-icon" data-lucide="x" class="w-6 h-6"></i>`;
+        
+        setTimeout(() => {
+            menu.style.maxHeight = '';
+            menu.style.opacity = '';
+            menu.style.overflow = '';
+            menu.style.transition = '';
+        }, 400);
+
+    } else {
+        // CLOSE
+        menu.style.maxHeight = menu.scrollHeight + 'px';
+        menu.style.opacity = '1';
+        menu.style.overflow = 'hidden';
+        menu.style.transition = 'all 0.4s ease-in';
+        
+        requestAnimationFrame(() => {
+            menu.style.maxHeight = '0';
+            menu.style.opacity = '0';
+        });
+
+        // Icon to Menu
+        btn.innerHTML = `<i id="mobile-nav-icon" data-lucide="menu" class="w-6 h-6"></i>`;
+
+        setTimeout(() => {
+            menu.classList.add('hidden');
+            menu.style.maxHeight = '';
+            menu.style.opacity = '';
+            menu.style.overflow = '';
+            menu.style.transition = '';
+        }, 400);
+    }
     
     lucide.createIcons();
 }
