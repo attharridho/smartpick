@@ -281,14 +281,6 @@ const smartphones = [
         image: "apple-iphone-16-pro-max.jpg"
     },
     {
-        id: 411, name: "iPhone SE 4", price: 8499000, brand: "Apple",
-        screen: "6.1' OLED", chipset: "A18 Bionic", ram: "8GB", storage: "128GB",
-        camera: "48MP Main", battery: "3279 mAh (20W)", category: ["basic", "work"],
-        scores: { camera: 8.8, gaming: 9.2, battery: 7.5, multi: 9.0 },
-        prevGen: "Akhirnya menggunakan layar OLED penuh tanpa tombol home, desain modern ala iPhone 14.",
-        image: "apple-iphone-16e.jpg"
-    },
-    {
         id: 412, name: "iPhone 17", price: 17499000, brand: "Apple",
         screen: "6.2' LTPO Super Retina XDR", chipset: "A19 Bionic", ram: "8GB", storage: "128GB",
         camera: "48MP Fusion + 12MP UW", battery: "3800 mAh (30W)", category: ["work", "creator", "camera"],
@@ -1072,4 +1064,5 @@ function finishQuiz() {
 function resetQuiz() {
     startQuiz();
 }
+
 
