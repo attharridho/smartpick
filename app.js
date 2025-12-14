@@ -9,6 +9,7 @@ const smartphones = [
         scores: { camera: 6.5, gaming: 7.5, battery: 9.5, multi: 7.0 },
         prevGen: "Upgrade baterai lebih besar dari P55, layar lebih luas dengan refresh rate tinggi.",
         image: "itel-p65.jpg"
+        link: "https://www.tokopedia.com/search?st=product&q=Itel+P65+5G"
     },
     {
         id: 102, name: "Xiaomi Redmi 14C", price: 1899000, brand: "Xiaomi",
@@ -17,6 +18,7 @@ const smartphones = [
         scores: { camera: 7.0, gaming: 6.5, battery: 8.5, multi: 7.5 },
         prevGen: "Desain lebih tipis dari 13C, charging lebih cepat 33W.",
         image: "xiaomi-redmi-14c.jpg"
+        link: "https://www.tokopedia.com/search?st=product&q=Itel+P65+5G"
     },
     {
         id: 103, name: "Samsung Galaxy A06", price: 1999000, brand: "Samsung",
@@ -497,6 +499,9 @@ function showDetail(id) {
     const modal = document.getElementById('detail-modal');
     const content = document.getElementById('detail-content');
 
+    // Gunakan link manual dari data, jika tidak ada, gunakan link pencarian otomatis sebagai fallback
+    const marketplaceLink = phone.link || `https://www.tokopedia.com/search?st=product&q=${encodeURIComponent(phone.name)}`;
+
     content.innerHTML = `
         <div class="flex flex-col md:flex-row">
             <div class="w-full md:w-1/3 bg-gray-50 p-8 flex items-center justify-center rounded-t-[2.5rem] md:rounded-l-[2.5rem] md:rounded-tr-none">
@@ -505,9 +510,25 @@ function showDetail(id) {
             
             <div class="w-full md:w-2/3 p-8 md:p-10">
                 <div class="mb-6">
-                    <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-2 inline-block">${phone.brand}</span>
-                    <h2 class="text-3xl font-bold text-gray-900 leading-tight mb-2">${phone.name}</h2>
-                    <p class="text-4xl font-bold text-blue-600">${formatRupiah(phone.price)}</p>
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-2 inline-block">${phone.brand}</span>
+                            <h2 class="text-3xl font-bold text-gray-900 leading-tight mb-2">${phone.name}</h2>
+                            <p class="text-4xl font-bold text-blue-600">${formatRupiah(phone.price)}</p>
+                        </div>
+                        
+                        <!-- TOMBOL BELI SEKARANG -->
+                        <a href="${marketplaceLink}" target="_blank" class="hidden md:flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-full font-bold shadow-lg shadow-green-200 transition-transform transform hover:scale-105">
+                            <i data-lucide="shopping-bag" class="w-5 h-5"></i>
+                            Beli Sekarang
+                        </a>
+                    </div>
+                    
+                    <!-- TOMBOL BELI MOBILE (Muncul di bawah harga pada layar kecil) -->
+                    <a href="${marketplaceLink}" target="_blank" class="md:hidden w-full mt-4 flex justify-center items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-xl font-bold shadow-lg shadow-green-200 transition-transform transform active:scale-95">
+                        <i data-lucide="shopping-bag" class="w-5 h-5"></i>
+                        Beli Sekarang
+                    </a>
                 </div>
 
                 <div class="grid grid-cols-2 gap-x-8 gap-y-6 mb-8">
@@ -1064,5 +1085,3 @@ function finishQuiz() {
 function resetQuiz() {
     startQuiz();
 }
-
-
