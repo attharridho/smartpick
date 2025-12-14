@@ -65,6 +65,7 @@ const smartphones = [
         image: "realme-c67.jpg",
         link: "https://www.tokopedia.com/search?st=product&q=Realme+C67"
     },
+
     // --- KATEGORI 2: 2 - 4 JUTA (MID RANGE) ---
     {
         id: 201, name: "Samsung Galaxy A16 5G", price: 3499000, brand: "Samsung",
@@ -72,7 +73,8 @@ const smartphones = [
         camera: "50MP (EIS) + UW", battery: "5000 mAh (25W)", category: ["work", "basic"],
         scores: { camera: 8.0, gaming: 7.0, battery: 9.0, multi: 8.0 },
         prevGen: "Jaminan update OS 6 tahun pertama di seri A1x, layar AMOLED lebih terang.",
-        image: "samsung-galaxy-a165g.jpg"
+        image: "samsung-galaxy-a165g.jpg",
+        link: "https://www.tokopedia.com/search?st=product&q=Samsung+Galaxy+A16+5G"
     },
     {
         id: 202, name: "Redmi Note 14 5G", price: 2899000, brand: "Xiaomi",
@@ -80,7 +82,8 @@ const smartphones = [
         camera: "108MP (OIS)", battery: "5110 mAh (45W)", category: ["gaming", "creator"],
         scores: { camera: 7.8, gaming: 8.0, battery: 8.5, multi: 8.0 },
         prevGen: "Bezel layar super tipis, desain lebih premium mirip seri Pro.",
-        image: "xiaomi-redmi-note-145g.jpg"
+        image: "xiaomi-redmi-note-145g.jpg",
+        link: "https://www.tokopedia.com/search?st=product&q=Redmi+Note+14+5G"
     },
     {
         id: 203, name: "Infinix Note 50 Pro+", price: 3299000, brand: "Infinix",
@@ -88,7 +91,8 @@ const smartphones = [
         camera: "108MP (OIS)", battery: "5200 mAh (100W)", category: ["gaming", "work"],
         scores: { camera: 7.5, gaming: 8.5, battery: 8.8, multi: 8.5 },
         prevGen: "Charging lebih ngebut 100W, chipset 4nm hemat daya.",
-        image: "infinix-note50-pro-plus-5g.jpg"
+        image: "infinix-note50-pro-plus-5g.jpg",
+        link: "https://www.tokopedia.com/search?st=product&q=Infinix+Note+50+Pro+Plus"
     },
     {
         id: 204, name: "Poco M7 Pro 5G", price: 3199000, brand: "Xiaomi",
@@ -96,7 +100,8 @@ const smartphones = [
         camera: "50MP (OIS)", battery: "5110 mAh (45W)", category: ["gaming", "camera"],
         scores: { camera: 7.8, gaming: 8.2, battery: 9.0, multi: 8.0 },
         prevGen: "Stabilisasi OIS kini hadir di seri M, layar Flow AMOLED bezel tipis.",
-        image: "xiaomi-poco-m7-pro-5g.jpg"
+        image: "xiaomi-poco-m7-pro-5g.jpg",
+        link: "https://www.tokopedia.com/search?st=product&q=Poco+M7+Pro+5G"
     },
     {
         id: 205, name: "Vivo Y100 5G (2025)", price: 3699000, brand: "Vivo",
@@ -104,7 +109,8 @@ const smartphones = [
         camera: "50MP + 8MP UW", battery: "5000 mAh (80W)", category: ["camera", "work"],
         scores: { camera: 8.0, gaming: 7.0, battery: 9.2, multi: 8.0 },
         prevGen: "Charging kilat 80W tercepat di kelasnya, bodi kulit fiber premium.",
-        image: "vivo-y100-5g.jpg"
+        image: "vivo-y100-5g.jpg",
+        link: "https://www.tokopedia.com/search?st=product&q=Vivo+Y100+5G"
     },
     {
         id: 206, name: "Tecno Camon 30 Premier", price: 3999000, brand: "Lainnya",
@@ -112,7 +118,8 @@ const smartphones = [
         camera: "Sony IMX890 50MP", battery: "5000 mAh (70W)", category: ["camera", "creator"],
         scores: { camera: 8.5, gaming: 8.0, battery: 8.5, multi: 8.5 },
         prevGen: "Sensor kamera flagship Sony IMX890 di harga menengah.",
-        image: "tecno-camon-30-premier-5g.jpg"
+        image: "tecno-camon-30-premier-5g.jpg",
+        link: "https://www.tokopedia.com/search?st=product&q=Tecno+Camon+30+Premier"
     },
     {
         id: 207, name: "Realme 13+ 5G", price: 3899000, brand: "Lainnya",
@@ -120,7 +127,8 @@ const smartphones = [
         camera: "50MP Sony LYT-600", battery: "5000 mAh (80W)", category: ["camera", "gaming"],
         scores: { camera: 8.2, gaming: 7.8, battery: 8.5, multi: 8.2 },
         prevGen: "Sensor Sony baru untuk foto low-light lebih jernih.",
-        image: "realme-13-plus-5g.jpg"
+        image: "realme-13-plus-5g.jpg",
+        link: "https://www.tokopedia.com/search?st=product&q=Realme+13+Plus+5G"
     },
     {
         id: 208, name: "iQoo Z10r 5G", price: 4399000, brand: "Lainnya",
@@ -128,7 +136,8 @@ const smartphones = [
         camera: "50MP OIS", battery: "5700 mAh (44W)", category: ["gaming", "work"],
         scores: { camera: 7.8, gaming: 9.3, battery: 9.5, multi: 8.8 },
         prevGen: "Baterai monster 6000mAh dengan bodi tipis, layar 144Hz paling smooth di kelasnya.",
-        image: "iqoo-z10r.jpg"
+        image: "iqoo-z10r.jpg",
+        link: "https://www.tokopedia.com/search?st=product&q=iQoo+Z10r"
     },
 
     // --- KATEGORI 3: 4 - 6 JUTA (UPPER MID) ---
@@ -138,7 +147,8 @@ const smartphones = [
         camera: "50MP (OIS) + 8MP UW", battery: "5000 mAh (45W)", category: ["work", "creator", "camera"],
         scores: { camera: 8.5, gaming: 7.5, battery: 9.0, multi: 8.5 },
         prevGen: "Desain Key Island baru, bezel lebih tipis dari A35.",
-        image: "samsung-galaxy-a36.jpg"
+        image: "samsung-galaxy-a36.jpg",
+        link: "https://www.tokopedia.com/search?st=product&q=Samsung+Galaxy+A36+5G"
     },
     {
         id: 302, name: "Xiaomi Redmi Note 14 Pro+ 5G", price: 5499000, brand: "Xiaomi",
@@ -146,7 +156,8 @@ const smartphones = [
         camera: "200MP + Telephoto", battery: "5110 mAh (120W)", category: ["camera", "gaming"],
         scores: { camera: 9.0, gaming: 8.5, battery: 9.2, multi: 9.0 },
         prevGen: "IP68 Tahan air penuh, layar lengkung premium, ada lensa telephoto.",
-        image: "xiaomi-redmi-note-14-pro-plus-5g.jpg"
+        image: "xiaomi-redmi-note-14-pro-plus-5g.jpg",
+        link: "https://www.tokopedia.com/search?st=product&q=Redmi+Note+14+Pro+Plus"
     },
     {
         id: 303, name: "Poco F7", price: 5899000, brand: "Xiaomi",
@@ -154,7 +165,8 @@ const smartphones = [
         camera: "50MP OIS", battery: "6500 mAh (90W)", category: ["gaming", "work"],
         scores: { camera: 7.8, gaming: 9.8, battery: 9.0, multi: 9.5 },
         prevGen: "Performa flagship killer sejati, baterai badak 5500 mAh.",
-        image: "xiaomi-poco-f7.jpg"
+        image: "xiaomi-poco-f7.jpg",
+        link: "https://www.tokopedia.com/search?st=product&q=Poco+F7"
     },
     {
         id: 304, name: "Infinix GT 30 Pro", price: 4999000, brand: "Infinix",
@@ -162,7 +174,8 @@ const smartphones = [
         camera: "108MP (OIS)", battery: "5200 mAh (45W)", category: ["gaming"],
         scores: { camera: 7.5, gaming: 9.5, battery: 8.5, multi: 8.8 },
         prevGen: "Chipset jauh lebih kencang (setara flagship tahun lalu), lampu LED mecha lebih interaktif.",
-        image: "infinix-gt30-pro.jpg"
+        image: "infinix-gt30-pro.jpg",
+        link: "https://www.tokopedia.com/search?st=product&q=Infinix+GT+30+Pro"
     },
     {
         id: 305, name: "Vivo V40e", price: 5299000, brand: "Vivo",
@@ -170,7 +183,8 @@ const smartphones = [
         camera: "50MP Zeiss Optics", battery: "5500 mAh (80W)", category: ["camera", "creator"],
         scores: { camera: 9.2, gaming: 7.5, battery: 9.5, multi: 8.5 },
         prevGen: "Kolaborasi ZEISS masuk ke seri V lebih murah, hasil foto potret level profesional.",
-        image: "vivo-v40e.jpg"
+        image: "vivo-v40e.jpg",
+        link: "https://www.tokopedia.com/search?st=product&q=Vivo+V40e"
     },
     {
         id: 306, name: "Oppo Reno 12 F 5G", price: 4599000, brand: "Oppo",
@@ -178,7 +192,8 @@ const smartphones = [
         camera: "50MP + AI Eraser", battery: "5000 mAh (45W)", category: ["camera", "basic"],
         scores: { camera: 8.5, gaming: 7.0, battery: 8.5, multi: 8.0 },
         prevGen: "Fitur AI Generative (hapus objek foto) hadir di harga terjangkau.",
-        image: "oppo-reno12-f.jpg"
+        image: "oppo-reno12-f.jpg",
+        link: "https://www.tokopedia.com/search?st=product&q=Oppo+Reno+12+F"
     },
     {
         id: 307, name: "Realme 13 Pro", price: 5999000, brand: "Lainnya",
@@ -186,7 +201,8 @@ const smartphones = [
         camera: "50MP Sony LYT-701", battery: "5200 mAh (45W)", category: ["camera", "creator"],
         scores: { camera: 8.8, gaming: 7.5, battery: 9.0, multi: 8.5 },
         prevGen: "Desain Monet Gold mewah, sensor kamera Sony LYT baru.",
-        image: "realme-13-pro.jpg"
+        image: "realme-13-pro.jpg",
+        link: "https://www.tokopedia.com/search?st=product&q=Realme+13+Pro"
     },
     {
         id: 308, name: "Samsung Galaxy M55s 5G", price: 4299000, brand: "Samsung",
@@ -194,7 +210,8 @@ const smartphones = [
         camera: "50MP OIS + 8MP UW", battery: "5000 mAh (45W)", category: ["work", "basic"],
         scores: { camera: 8.2, gaming: 7.8, battery: 9.5, multi: 8.2 },
         prevGen: "Bodi super tipis dengan baterai besar, chipset Snapdragon yang efisien.",
-        image: "samsung-galaxy-m55s.jpg"
+        image: "samsung-galaxy-m55s.jpg",
+        link: "https://www.tokopedia.com/search?st=product&q=Samsung+Galaxy+M55s"
     },
     {
         id: 310, name: "Samsung Galaxy M56 5G", price: 4999000, brand: "Samsung",
@@ -202,7 +219,8 @@ const smartphones = [
         camera: "108MP OIS", battery: "6000 mAh (45W)", category: ["gaming", "work"],
         scores: { camera: 8.0, gaming: 8.8, battery: 9.8, multi: 8.5 },
         prevGen: "Refresh rate 144Hz pertama di seri M, baterai tetap monster 6000mAh.",
-        image: "samsung-galaxy-m56.jpg"
+        image: "samsung-galaxy-m56.jpg",
+        link: "https://www.tokopedia.com/search?st=product&q=Samsung+Galaxy+M56"
     },
 
     // --- KATEGORI 4: DI ATAS 6 JUTA (FLAGSHIP) ---
@@ -212,7 +230,8 @@ const smartphones = [
         camera: "48MP Fusion + 12MP UW", battery: "3561 mAh (25W)", category: ["work", "creator", "camera"],
         scores: { camera: 9.5, gaming: 9.5, battery: 8.5, multi: 9.8 },
         prevGen: "Tombol 'Action Button' & 'Capture Button' baru, chip A18 super kencang untuk AI.",
-        image: "apple-iphone-16.jpg"
+        image: "apple-iphone-16.jpg",
+        link: "https://www.tokopedia.com/search?st=product&q=iPhone+16"
     },
     {
         id: 402, name: "Samsung Galaxy S25", price: 13999000, brand: "Samsung",
@@ -220,7 +239,8 @@ const smartphones = [
         camera: "50MP + 12MP + 10MP Tele", battery: "4000 mAh (25W)", category: ["work", "camera", "basic"],
         scores: { camera: 9.2, gaming: 9.2, battery: 8.0, multi: 9.5 },
         prevGen: "Bezel layar makin tipis, integrasi Galaxy AI generasi kedua lebih pintar.",
-        image: "samsung-galaxy-s25.jpg"
+        image: "samsung-galaxy-s25.jpg",
+        link: "https://www.tokopedia.com/search?st=product&q=Samsung+Galaxy+S25"
     },
     {
         id: 403, name: "Samsung Galaxy A56 5G", price: 6499000, brand: "Samsung",
@@ -228,7 +248,8 @@ const smartphones = [
         camera: "50MP (OIS) + 12MP + 5MP", battery: "5000 mAh (45W)", category: ["work", "creator"],
         scores: { camera: 8.8, gaming: 8.0, battery: 9.0, multi: 9.0 },
         prevGen: "Performa GPU naik drastis (setara flagship lama), support charging 45W.",
-        image: "samsung-galaxy-a56.jpg"
+        image: "samsung-galaxy-a56.jpg",
+        link: "https://www.tokopedia.com/search?st=product&q=Samsung+Galaxy+A56"
     },
     {
         id: 404, name: "Xiaomi 15", price: 10999000, brand: "Xiaomi",
@@ -236,7 +257,8 @@ const smartphones = [
         camera: "Leica 50MP Triple Cam", battery: "5240 mAh (90W)", category: ["camera", "work"],
         scores: { camera: 9.4, gaming: 9.8, battery: 9.0, multi: 9.5 },
         prevGen: "Ukuran compact tapi baterai besar 5000mAh, lensa Leica Summilux terbaru.",
-        image: "xiaomi-15.jpg"
+        image: "xiaomi-15.jpg",
+        link: "https://www.tokopedia.com/search?st=product&q=Xiaomi+15"
     },
     {
         id: 405, name: "Asus Zenfone 12 Ultra", price: 11499000, brand: "Lainnya",
@@ -244,7 +266,8 @@ const smartphones = [
         camera: "50MP Gimbal OIS", battery: "5500 mAh (65W)", category: ["gaming", "camera"],
         scores: { camera: 8.8, gaming: 9.0, battery: 9.2, multi: 9.0 },
         prevGen: "Stabilisasi video terbaik dengan Gimbal Hybrid 6-axis terbaru.",
-        image: "asus-zenfone-12-ultra.jpg"
+        image: "asus-zenfone-12-ultra.jpg",
+        link: "https://www.tokopedia.com/search?st=product&q=Asus+Zenfone+12+Ultra"
     },
     {
         id: 406, name: "Samsung Galaxy Z Flip 7", price: 15999000, brand: "Samsung",
@@ -252,7 +275,8 @@ const smartphones = [
         camera: "50MP + 12MP", battery: "4300 mAh (25W)", category: ["creator", "basic"],
         scores: { camera: 8.8, gaming: 8.5, battery: 7.8, multi: 9.0 },
         prevGen: "Lipatan layar makin tidak terlihat (crease-less), cover screen lebih fungsional.",
-        image: "samsung-galaxy-z-flip7.jpg"
+        image: "samsung-galaxy-z-flip7.jpg",
+        link: "https://www.tokopedia.com/search?st=product&q=Samsung+Galaxy+Z+Flip+7"
     },
     {
         id: 407, name: "Google Pixel 9", price: 12999000, brand: "Lainnya",
@@ -260,7 +284,8 @@ const smartphones = [
         camera: "50MP + 48MP UW", battery: "4700 mAh (27W)", category: ["camera", "work"],
         scores: { camera: 9.5, gaming: 7.5, battery: 8.5, multi: 9.0 },
         prevGen: "Raja fotografi komputasi, fitur AI Magic Editor makin canggih.",
-        image: "google-pixel-9.jpg"
+        image: "google-pixel-9.jpg",
+        link: "https://www.tokopedia.com/search?st=product&q=Google+Pixel+9"
     },
     {
         id: 408, name: "iQoo 15 5G", price: 10999000, brand: "Lainnya",
@@ -268,7 +293,8 @@ const smartphones = [
         camera: "50MP VCS", battery: "7000 mAh (100W)", category: ["gaming", "work"],
         scores: { camera: 8.8, gaming: 9.9, battery: 9.0, multi: 9.8 },
         prevGen: "Sistem pendingin VC terluas, layar 2K 144Hz ultra smooth untuk gaming kompetitif.",
-        image: "iqoo-15.jpg"
+        image: "iqoo-15.jpg",
+        link: "https://www.tokopedia.com/search?st=product&q=iQoo+15"
     },
     {
         id: 409, name: "Samsung Galaxy S25 Ultra", price: 21999000, brand: "Samsung",
@@ -276,7 +302,8 @@ const smartphones = [
         camera: "200MP + 50MP 5x Tele", battery: "5000 mAh (45W)", category: ["camera", "work", "gaming"],
         scores: { camera: 9.9, gaming: 9.9, battery: 9.5, multi: 9.9 },
         prevGen: "Frame titanium lebih kuat, layar paling terang di dunia, AI lebih canggih.",
-        image: "samsung-galaxy-s25-ultra.jpg"
+        image: "samsung-galaxy-s25-ultra.jpg",
+        link: "https://www.tokopedia.com/search?st=product&q=Samsung+Galaxy+S25+Ultra"
     },
     {
         id: 410, name: "iPhone 16 Pro Max", price: 22999000, brand: "Apple",
@@ -284,7 +311,17 @@ const smartphones = [
         camera: "48MP Main + 48MP UW + 5x Tele", battery: "4676 mAh (30W)", category: ["camera", "creator", "gaming"],
         scores: { camera: 10.0, gaming: 9.8, battery: 9.8, multi: 9.9 },
         prevGen: "Layar terbesar di sejarah iPhone, tombol capture khusus kamera profesional.",
-        image: "apple-iphone-16-pro-max.jpg"
+        image: "iphone-16-pro-max.jpg",
+        link: "https://www.tokopedia.com/search?st=product&q=iPhone+16+Pro+Max"
+    },
+    {
+        id: 411, name: "iPhone SE 4", price: 8499000, brand: "Apple",
+        screen: "6.1' OLED", chipset: "A18 Bionic", ram: "8GB", storage: "128GB",
+        camera: "48MP Main", battery: "3279 mAh (20W)", category: ["basic", "work"],
+        scores: { camera: 8.8, gaming: 9.2, battery: 7.5, multi: 9.0 },
+        prevGen: "Akhirnya menggunakan layar OLED penuh tanpa tombol home, desain modern ala iPhone 14.",
+        image: "iphone-se-4.jpg",
+        link: "https://www.tokopedia.com/search?st=product&q=iPhone+SE+4"
     },
     {
         id: 412, name: "iPhone 17", price: 17499000, brand: "Apple",
@@ -292,7 +329,8 @@ const smartphones = [
         camera: "48MP Fusion + 12MP UW", battery: "3800 mAh (30W)", category: ["work", "creator", "camera"],
         scores: { camera: 9.6, gaming: 9.6, battery: 8.8, multi: 9.9 },
         prevGen: "Layar ProMotion 120Hz akhirnya hadir di model non-Pro, performa A19 tak tertandingi.",
-        image: "apple-iphone-17.jpg"
+        image: "iphone-17.jpg",
+        link: "https://www.tokopedia.com/search?st=product&q=iPhone+17"
     },
     {
         id: 413, name: "iPhone 17 Pro", price: 21999000, brand: "Apple",
@@ -300,7 +338,8 @@ const smartphones = [
         camera: "48MP Triple Cam System", battery: "4000 mAh (35W)", category: ["camera", "work", "gaming"],
         scores: { camera: 9.9, gaming: 10.0, battery: 9.0, multi: 10.0 },
         prevGen: "Face ID di bawah layar, bezel tertipis di dunia, tombol solid-state haptic.",
-        image: "apple-iphone-17-pro.jpg"
+        image: "iphone-17-pro.jpg",
+        link: "https://www.tokopedia.com/search?st=product&q=iPhone+17+Pro"
     },
     {
         id: 414, name: "iPhone 17 Pro Max", price: 24999000, brand: "Apple",
@@ -308,7 +347,8 @@ const smartphones = [
         camera: "48MP Main + 48MP Tele 10x", battery: "4852 mAh (40W)", category: ["camera", "creator", "gaming"],
         scores: { camera: 10.0, gaming: 10.0, battery: 10.0, multi: 10.0 },
         prevGen: "Zoom optik 10x periskop, kemampuan rekam video spasial 8K.",
-        image: "apple-iphone-17-pro-max.jpg"
+        image: "iphone-17-pro-max.jpg",
+        link: "https://www.tokopedia.com/search?st=product&q=iPhone+17+Pro+Max"
     },
     {
         id: 415, name: "iPhone 17 Air", price: 18999000, brand: "Apple",
@@ -316,7 +356,8 @@ const smartphones = [
         camera: "48MP Single Wide", battery: "3500 mAh (25W)", category: ["basic", "work"],
         scores: { camera: 9.0, gaming: 9.0, battery: 8.0, multi: 9.5 },
         prevGen: "iPhone paling tipis yang pernah ada, desain ultra-minimalis, menggantikan seri Plus.",
-        image: "apple-iphone-air.jpg"
+        image: "iphone-17-air.jpg",
+        link: "https://www.tokopedia.com/search?st=product&q=iPhone+17+Air"
     }
 ];
 
@@ -508,31 +549,17 @@ function showDetail(id) {
 
     content.innerHTML = `
         <div class="flex flex-col md:flex-row">
+            <!-- Left Side: Image -->
             <div class="w-full md:w-1/3 bg-gray-50 p-8 flex items-center justify-center rounded-t-[2.5rem] md:rounded-l-[2.5rem] md:rounded-tr-none">
                 <img src="${phone.image}" alt="${phone.name}" class="max-h-80 object-contain drop-shadow-xl" onerror="this.src='https://placehold.co/300x400?text=No+Image'">
             </div>
             
+            <!-- Right Side: Info -->
             <div class="w-full md:w-2/3 p-8 md:p-10">
                 <div class="mb-6">
-                    <div class="flex justify-between items-start">
-                        <div>
-                            <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-2 inline-block">${phone.brand}</span>
-                            <h2 class="text-3xl font-bold text-gray-900 leading-tight mb-2">${phone.name}</h2>
-                            <p class="text-4xl font-bold text-blue-600">${formatRupiah(phone.price)}</p>
-                        </div>
-                        
-                        <!-- TOMBOL BELI SEKARANG -->
-                        <a href="${marketplaceLink}" target="_blank" class="hidden md:flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-full font-bold shadow-lg shadow-green-200 transition-transform transform hover:scale-105">
-                            <i data-lucide="shopping-bag" class="w-5 h-5"></i>
-                            Beli Sekarang
-                        </a>
-                    </div>
-                    
-                    <!-- TOMBOL BELI MOBILE (Muncul di bawah harga pada layar kecil) -->
-                    <a href="${marketplaceLink}" target="_blank" class="md:hidden w-full mt-4 flex justify-center items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-xl font-bold shadow-lg shadow-green-200 transition-transform transform active:scale-95">
-                        <i data-lucide="shopping-bag" class="w-5 h-5"></i>
-                        Beli Sekarang
-                    </a>
+                    <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-2 inline-block">${phone.brand}</span>
+                    <h2 class="text-3xl font-bold text-gray-900 leading-tight mb-2">${phone.name}</h2>
+                    <p class="text-4xl font-bold text-blue-600">${formatRupiah(phone.price)}</p>
                 </div>
 
                 <div class="grid grid-cols-2 gap-x-8 gap-y-6 mb-8">
@@ -586,6 +613,12 @@ function showDetail(id) {
                         <span class="font-bold text-gray-900">${phone.scores.battery}/10</span>
                     </div>
                 </div>
+
+                <!-- TOMBOL BELI SEKARANG (Dipindahkan ke bawah & Warna Biru) -->
+                <a href="${marketplaceLink}" target="_blank" class="mt-8 w-full flex justify-center items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-4 rounded-2xl font-bold text-lg shadow-xl shadow-blue-200 transition-transform transform hover:scale-[1.02] active:scale-95">
+                    <i data-lucide="shopping-bag" class="w-5 h-5"></i>
+                    Beli Sekarang
+                </a>
             </div>
         </div>
     `;
@@ -1089,4 +1122,3 @@ function finishQuiz() {
 function resetQuiz() {
     startQuiz();
 }
-
