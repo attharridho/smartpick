@@ -8,8 +8,8 @@ const smartphones = [
         camera: "50MP AI", battery: "5000 mAh (18W)", category: ["basic", "gaming"],
         scores: { camera: 6.5, gaming: 7.5, battery: 9.5, multi: 7.0 },
         prevGen: "Upgrade baterai lebih besar dari P55, layar lebih luas dengan refresh rate tinggi.",
-        image: "itel-p65.jpg"
-        link: "https://www.tokopedia.com/search?st=product&q=Itel+P65+5G"
+        image: "itel-p65.jpg",
+        link: "https://www.tokopedia.com/search?st=product&q=Itel+P65+5G" // Ganti link ini manual
     },
     {
         id: 102, name: "Xiaomi Redmi 14C", price: 1899000, brand: "Xiaomi",
@@ -17,8 +17,8 @@ const smartphones = [
         camera: "50MP Main", battery: "5160 mAh (18W)", category: ["basic", "work"],
         scores: { camera: 7.0, gaming: 6.5, battery: 8.5, multi: 7.5 },
         prevGen: "Desain lebih tipis dari 13C, charging lebih cepat 33W.",
-        image: "xiaomi-redmi-14c.jpg"
-        link: "https://www.tokopedia.com/search?st=product&q=Itel+P65+5G"
+        image: "xiaomi-redmi-14c.jpg",
+        link: "https://www.tokopedia.com/search?st=product&q=Xiaomi+Redmi+14C"
     },
     {
         id: 103, name: "Samsung Galaxy A06", price: 1999000, brand: "Samsung",
@@ -26,7 +26,8 @@ const smartphones = [
         camera: "50MP + 2MP", battery: "5000 mAh (25W)", category: ["basic", "work"],
         scores: { camera: 7.2, gaming: 6.0, battery: 8.5, multi: 7.0 },
         prevGen: "Peningkatan dari A05s: Layar lebih mulus 90Hz dan manajemen daya lebih baik.",
-        image: "samsung-galaxy-a06.jpg"
+        image: "samsung-galaxy-a06.jpg",
+        link: "https://www.tokopedia.com/search?st=product&q=Samsung+Galaxy+A06"
     },
     {
         id: 104, name: "Infinix Hot 50 Pro", price: 1950000, brand: "Infinix",
@@ -34,7 +35,8 @@ const smartphones = [
         camera: "50MP", battery: "5000 mAh (33W)", category: ["gaming", "camera"],
         scores: { camera: 7.5, gaming: 7.8, battery: 8.0, multi: 7.5 },
         prevGen: "Kamera lompat ke 50MP di kelas harga murah, chipset gaming entry level baru.",
-        image: "infinix-hot-50pro4g.jpg"
+        image: "infinix-hot-50pro4g.jpg",
+        link: "https://www.tokopedia.com/search?st=product&q=Infinix+Hot+50+Pro"
     },
     {
         id: 105, name: "Tecno Spark 30", price: 1750000, brand: "Lainnya",
@@ -42,7 +44,8 @@ const smartphones = [
         camera: "64MP", battery: "5000 mAh (18W)", category: ["basic"],
         scores: { camera: 6.8, gaming: 7.0, battery: 8.5, multi: 7.0 },
         prevGen: "Desain fresh, RAM bawaan besar 8GB standar.",
-        image: "tecno-spark-30.jpg"
+        image: "tecno-spark-30.jpg",
+        link: "https://www.tokopedia.com/search?st=product&q=Tecno+Spark+30"
     },
     {
         id: 106, name: "Vivo Y04", price: 1899000, brand: "Vivo",
@@ -50,7 +53,8 @@ const smartphones = [
         camera: "13MP", battery: "5000 mAh (15W)", category: ["basic", "camera"],
         scores: { camera: 7.3, gaming: 6.0, battery: 8.5, multi: 6.5 },
         prevGen: "Fokus pada desain stylish dan hasil foto potret khas Vivo di harga terjangkau.",
-        image: "vivo-y04.jpg"
+        image: "vivo-y04.jpg",
+        link: "https://www.tokopedia.com/search?st=product&q=Vivo+Y04"
     },
     {
         id: 107, name: "Realme C67 (2025)", price: 1999000, brand: "Lainnya",
@@ -58,9 +62,9 @@ const smartphones = [
         camera: "108MP Zoom", battery: "5000 mAh (33W)", category: ["camera", "work"],
         scores: { camera: 7.8, gaming: 6.8, battery: 8.5, multi: 7.5 },
         prevGen: "Versi refresh dengan optimasi software kamera 108MP yang lebih stabil.",
-        image: "realme-c67.jpg"
+        image: "realme-c67.jpg",
+        link: "https://www.tokopedia.com/search?st=product&q=Realme+C67"
     },
-
     // --- KATEGORI 2: 2 - 4 JUTA (MID RANGE) ---
     {
         id: 201, name: "Samsung Galaxy A16 5G", price: 3499000, brand: "Samsung",
@@ -1085,3 +1089,4 @@ function finishQuiz() {
 function resetQuiz() {
     startQuiz();
 }
+
