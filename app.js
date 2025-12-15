@@ -132,12 +132,21 @@ const smartphones = [
     },
     {
         id: 208, name: "iQoo Z10r 5G", price: 4399000, brand: "Lainnya",
-        screen: "6.77' AMOLED 120Hz", chipset: "Mediatek Dimensity 7400", ram: "12GB", storage: "256GB",
+        screen: "6.77' AMOLED 120Hz", chipset: "Dimensity 7400", ram: "12GB", storage: "256GB",
         camera: "50MP OIS", battery: "5700 mAh (44W)", category: ["gaming", "work"],
         scores: { camera: 7.8, gaming: 9.3, battery: 9.5, multi: 8.8 },
         prevGen: "Baterai monster 6000mAh dengan bodi tipis, layar 144Hz paling smooth di kelasnya.",
         image: "iqoo-z10r.jpg",
         link: "https://www.tokopedia.com/search?st=product&q=iQoo+Z10r"
+    },
+     {
+        id: 209, name: "Motorola Moto G86 Power 5G", price: 3599000, brand: "Lainnya",
+        screen: "6.6' pOLED 120Hz", chipset: "Dimensity 7300", ram: "8GB", storage: "256GB",
+        camera: "50MP (OIS)", battery: "6720 mAh (30W)", category: ["basic", "gaming"],
+        scores: { camera: 7.5, gaming: 7.8, battery: 9.8, multi: 8.0 },
+        prevGen: "Kapasitas baterai masif 6720mAh dalam bodi ringkas, layar pOLED 120Hz yang tajam.",
+        image: "motorola-moto-g86-power.jpg",
+        link: "https://www.tokopedia.com/search?st=product&q=Motorola+Moto+G86+Power"
     },
 
     // --- KATEGORI 3: 4 - 6 JUTA (UPPER MID) ---
@@ -315,15 +324,6 @@ const smartphones = [
         link: "https://www.tokopedia.com/search?st=product&q=iPhone+16+Pro+Max"
     },
     {
-        id: 411, name: "iPhone SE 4", price: 8499000, brand: "Apple",
-        screen: "6.1' OLED", chipset: "A18 Bionic", ram: "8GB", storage: "128GB",
-        camera: "48MP Main", battery: "3279 mAh (20W)", category: ["basic", "work"],
-        scores: { camera: 8.8, gaming: 9.2, battery: 7.5, multi: 9.0 },
-        prevGen: "Akhirnya menggunakan layar OLED penuh tanpa tombol home, desain modern ala iPhone 14.",
-        image: "apple-iphone-se-4.jpg",
-        link: "https://www.tokopedia.com/search?st=product&q=iPhone+SE+4"
-    },
-    {
         id: 412, name: "iPhone 17", price: 17499000, brand: "Apple",
         screen: "6.2' LTPO Super Retina XDR", chipset: "A19 Bionic", ram: "8GB", storage: "128GB",
         camera: "48MP Fusion + 12MP UW", battery: "3800 mAh (30W)", category: ["work", "creator", "camera"],
@@ -351,12 +351,12 @@ const smartphones = [
         link: "https://www.tokopedia.com/search?st=product&q=iPhone+17+Pro+Max"
     },
     {
-        id: 415, name: "iPhone 17 Air", price: 18999000, brand: "Apple",
+        id: 415, name: "iPhone Air", price: 18999000, brand: "Apple",
         screen: "6.6' Slim OLED ProMotion", chipset: "A19 Bionic", ram: "8GB", storage: "256GB",
         camera: "48MP Single Wide", battery: "3500 mAh (25W)", category: ["basic", "work"],
         scores: { camera: 9.0, gaming: 9.0, battery: 8.0, multi: 9.5 },
         prevGen: "iPhone paling tipis yang pernah ada, desain ultra-minimalis, menggantikan seri Plus.",
-        image: "apple-iphone-17-air.jpg",
+        image: "apple-iphone-air.jpg",
         link: "https://www.tokopedia.com/search?st=product&q=iPhone+17+Air"
     }
 ];
@@ -1122,4 +1122,5 @@ function finishQuiz() {
 function resetQuiz() {
     startQuiz();
 }
+
 
