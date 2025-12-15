@@ -311,7 +311,7 @@ const smartphones = [
         camera: "48MP Main + 48MP UW + 5x Tele", battery: "4676 mAh (30W)", category: ["camera", "creator", "gaming"],
         scores: { camera: 10.0, gaming: 9.8, battery: 9.8, multi: 9.9 },
         prevGen: "Layar terbesar di sejarah iPhone, tombol capture khusus kamera profesional.",
-        image: "iphone-16-pro-max.jpg",
+        image: "apple-iphone-16-pro-max.jpg",
         link: "https://www.tokopedia.com/search?st=product&q=iPhone+16+Pro+Max"
     },
     {
@@ -320,7 +320,7 @@ const smartphones = [
         camera: "48MP Main", battery: "3279 mAh (20W)", category: ["basic", "work"],
         scores: { camera: 8.8, gaming: 9.2, battery: 7.5, multi: 9.0 },
         prevGen: "Akhirnya menggunakan layar OLED penuh tanpa tombol home, desain modern ala iPhone 14.",
-        image: "iphone-se-4.jpg",
+        image: "apple-iphone-se-4.jpg",
         link: "https://www.tokopedia.com/search?st=product&q=iPhone+SE+4"
     },
     {
@@ -329,7 +329,7 @@ const smartphones = [
         camera: "48MP Fusion + 12MP UW", battery: "3800 mAh (30W)", category: ["work", "creator", "camera"],
         scores: { camera: 9.6, gaming: 9.6, battery: 8.8, multi: 9.9 },
         prevGen: "Layar ProMotion 120Hz akhirnya hadir di model non-Pro, performa A19 tak tertandingi.",
-        image: "iphone-17.jpg",
+        image: "apple-iphone-17.jpg",
         link: "https://www.tokopedia.com/search?st=product&q=iPhone+17"
     },
     {
@@ -338,7 +338,7 @@ const smartphones = [
         camera: "48MP Triple Cam System", battery: "4000 mAh (35W)", category: ["camera", "work", "gaming"],
         scores: { camera: 9.9, gaming: 10.0, battery: 9.0, multi: 10.0 },
         prevGen: "Face ID di bawah layar, bezel tertipis di dunia, tombol solid-state haptic.",
-        image: "iphone-17-pro.jpg",
+        image: "apple-iphone-17-pro.jpg",
         link: "https://www.tokopedia.com/search?st=product&q=iPhone+17+Pro"
     },
     {
@@ -347,7 +347,7 @@ const smartphones = [
         camera: "48MP Main + 48MP Tele 10x", battery: "4852 mAh (40W)", category: ["camera", "creator", "gaming"],
         scores: { camera: 10.0, gaming: 10.0, battery: 10.0, multi: 10.0 },
         prevGen: "Zoom optik 10x periskop, kemampuan rekam video spasial 8K.",
-        image: "iphone-17-pro-max.jpg",
+        image: "apple-iphone-17-pro-max.jpg",
         link: "https://www.tokopedia.com/search?st=product&q=iPhone+17+Pro+Max"
     },
     {
@@ -356,7 +356,7 @@ const smartphones = [
         camera: "48MP Single Wide", battery: "3500 mAh (25W)", category: ["basic", "work"],
         scores: { camera: 9.0, gaming: 9.0, battery: 8.0, multi: 9.5 },
         prevGen: "iPhone paling tipis yang pernah ada, desain ultra-minimalis, menggantikan seri Plus.",
-        image: "iphone-17-air.jpg",
+        image: "apple-iphone-17-air.jpg",
         link: "https://www.tokopedia.com/search?st=product&q=iPhone+17+Air"
     }
 ];
@@ -1122,3 +1122,4 @@ function finishQuiz() {
 function resetQuiz() {
     startQuiz();
 }
+
